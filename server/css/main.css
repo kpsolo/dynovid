@@ -1,0 +1,49 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 140%;
+  background-color: #fff;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif; }
+
+.hidden {
+  display: none; }
+
+a {
+  text-decoration: none;
+  transition: color .3s ease; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+*:focus {
+  outline: 0; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+@media (max-width: 992px) {
+  .collapse {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 15px; }
+  .collapse.in {
+    display: block; }
+  tr.collapse.in {
+    display: table-row; }
+  tbody.collapse.in {
+    display: table-row-group; }
+  .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-duration: 0.35s;
+    transition-timing-function: ease; } }
