@@ -2,10 +2,10 @@
 
 Install:
 
-    npm install
-    gulp svg
-    gulp build
+1.     npm install
+1.     gulp svg
+1.     gulp build
 
 If need run localhost:
 
-    gulp
+*     gulp
