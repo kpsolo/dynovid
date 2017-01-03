@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+// 'sprite/sprite',
+@import
+  'bourbon',
+  'components/mixins';
+
+// 2. Base stuff
+@import
+  'base/base';
+
+// 3. Layout
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/content';
+
+// 4. Website pages
+@import
+ 'pages/home';
