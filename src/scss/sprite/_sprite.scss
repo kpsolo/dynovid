@@ -1,4 +1,7 @@
 $icons: (
-      sprite: (width: 49px, height: 49px, svgPath: $PathCss+'img/sprite.svg'),
-    technology_clock: (width: 39px, height: 39px, backgroundX: 0px, backgroundY: 0px),
+      sprite: (width: 127px, height: 127px, svgPath: $PathCss+'img/sprite.svg'),
+    facebook: (width: 16px, height: 16px, backgroundX: 0px, backgroundY: 0px),
+    instagram: (width: 16px, height: 16px, backgroundX: -26px, backgroundY: -26px),
+    technology_clock: (width: 39px, height: 39px, backgroundX: -52px, backgroundY: -52px),
+    twitter: (width: 16px, height: 16px, backgroundX: -101px, backgroundY: -101px),
 );

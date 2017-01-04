@@ -7,7 +7,7 @@
 }
 
 body {
-	font-family: sans-serif;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-size: rem(16);
 	line-height: 140%;
 	background-color:#fff;
@@ -15,7 +15,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: sans-serif;
+	font-family: 'Comfortaa', cursive;
+}
+
+p {
+	margin: 0 0 10px;
 }
 
 .hidden {
@@ -40,11 +44,10 @@ a {
   height: auto;
 }
 
-@media(max-width: 992px) {
+@media(max-width: 767px) {
 
 	.collapse {
 		display: none;
-		@include position(absolute, 100% 15px null null);
 	}
 
 	.collapse.in {

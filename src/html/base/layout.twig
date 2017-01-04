@@ -15,7 +15,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	
+
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Raleway:300,400,600" rel="stylesheet"> 
 	<link href="{{linkPath}}css/normalize.min.css" rel="stylesheet">
 	<link href="{{linkPath}}css/main.css" rel="stylesheet">
 {% endblock %}
@@ -23,9 +24,47 @@
 
 <body>
 
+	<header class="header" role="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-sm-4 col-md-3 logo"><a href="/"><img src="{{linkPath}}img/logo.svg" alt="Dynovid Logo"></a></div>
+				<div class="col-xs-6 col-sm-8 col-md-9 nav">
+					<button class="nav__toggle collapsed" data-toggle="collapse" data-target="#nav__list"><span></span></button>
+					<div id="nav__list" class="collapse">
+						<ul class="nav__list">
+							<li><a class="active" href="/">Home</a></li>
+							<li><a href="/">Advertisers</a></li>
+							<li><a href="/">Publishers</a></li>
+							<li><a href="/">Technology</a></li>
+							<li><a href="/">Contacts</a></li>
+							<li><a class="signup" href="/">Sign Up</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
 	<main class="main" role="main">
 {% block main %}{% endblock %}
 	</main>
+
+	<footer class="footer" role="contentinfo">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9">
+					<p>Dynovid© 2017 All Rights Reserved <a href="/">Terms of Use</a> and <a href="/">Privacy Policy</a></p>
+				</div>
+				<div class="col-sm-3">
+					<ul class="footer__socil__link">
+						<li><a class="footer__socil__link__twitter" href="/"></a></li>
+						<li><a class="footer__socil__link__facebook" href="/"></a></li>
+						<li><a class="footer__socil__link__instagram" href="/"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="{{linkPath}}js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
