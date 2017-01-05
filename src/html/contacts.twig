@@ -1,0 +1,76 @@
+{# contacts.twig #}
+{% extends "base/layout.twig" %}
+
+{% block head %}{{ parent() }}{% endblock %}
+
+{% block title %}Contacts{% endblock %}
+
+{% block main %}
+
+<div class="current-link">
+    <div class="current-link-container">
+            <div class="container">
+                <div class="col-sm-12">
+                    <h1>Contacts</h1>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<div class="keyfeatures">
+    <div class="container">
+        <div class="row">
+            <a href="/" class="col-xs-12 col-sm-6 col-md-4" style='background-image: url({{ imgPath }}/key-feature-1.svg)'>
+                <h3>Phone Number</h3>
+                <p>0 800 555 22 11</p>
+            </a>
+            <a href="/" class="col-xs-12 col-sm-6 col-md-4" style='background-image: url({{ imgPath }}/key-feature-2.svg)'>
+                <h3>Location</h3>
+                <p>945 Cobblestone Lane 
+                    Hartford, CT 06106</p>
+            </a>
+            <a href="/" class="col-xs-12 col-sm-6 col-md-4" style='background-image: url({{ imgPath }}/key-feature-3.svg)'>
+                <h3>Mail Adress</h3>
+                <p>dynovid@info.com</p>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+<div class="message">
+    <div class="container-sm-height">
+        <div class="row row-sm-height">
+            <div class="col-sm-6 col-sm-height text">
+                <h1>Send a Message</h1>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <input type="text" name="name" placeholder="Your name">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" name="email" placeholder="Your e-mail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <textarea rows="4" name="message" placeholder="Your message"></textarea>
+                        </div>
+                        <div class="col-sm-12 contacts-submit">
+                                <input type="submit" value="Send Message" class="send" onClick="document.getElementById('myModal').style.display = 'block';return false;">
+                        </div>
+                        <div class="button">
+                            <a href="#" class="">Send Message</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block footer %}{{ parent() }}{% endblock %}
