@@ -28,7 +28,7 @@
     }
 }
 .whychoose {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     @media(max-width:$screen-md-min) {
         background-size: cover;
     }
@@ -44,10 +44,6 @@
     }
     .text {
         vertical-align:middle;
-        background-image: url($imgPathCss+'/bg-ads-text.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
         padding: 80px 8%;
         height: 620px;
         @media(max-width:$screen-md-min) {
@@ -60,6 +56,17 @@
     }
 }
 
+.events {
+    .photo {
+        background-image: url($imgPathCss+'/events.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media(max-width:$screen-md-min) {
+            display: none;
+        }
+    }
+}
 
 .welcome {
     background-color: rgb(255, 255, 255);

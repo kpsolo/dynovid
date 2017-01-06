@@ -9,6 +9,7 @@
 body {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 1rem;
+  font-weight: 400;
   line-height: 140%;
   background-color: #fff;
   color: #333; }
@@ -279,6 +280,7 @@ a {
       text-align: center; } }
   .footer p {
     margin: 0;
+    padding: 0;
     line-height: 38px; }
   .footer a {
     color: #fff; }
@@ -366,14 +368,6 @@ h1 {
     width: 42px;
     height: 4px; }
 
-p {
-  padding: 40px 0 0 0;
-  margin: 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: #767676;
-  line-height: 1.5; }
-
 .button {
   width: 100%;
   padding: 60px 0;
@@ -441,7 +435,7 @@ p {
         width: 100%; } }
 
 .whychoose {
-  background-color: white; }
+  background-color: #fff; }
   @media (max-width: 992px) {
     .whychoose {
       background-size: cover; } }
@@ -455,10 +449,6 @@ p {
         display: none; } }
   .whychoose .text {
     vertical-align: middle;
-    background-image: url("/img/bg-ads-text.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
     padding: 80px 8%;
     height: 620px; }
     @media (max-width: 992px) {
@@ -467,6 +457,15 @@ p {
         background-color: rgba(255, 255, 255, 0.92);
         padding: 40px 5%;
         width: 100%; } }
+
+.events .photo {
+  background-image: url("/img/events.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 992px) {
+    .events .photo {
+      display: none; } }
 
 .welcome {
   background-color: white; }
