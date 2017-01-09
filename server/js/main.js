@@ -123,6 +123,7 @@ $('.events ul').each(function() {
 
         if (!$(".event").is(':visible')) {
             $(".event").show();
+            $(".event div.photo:before").hide();
         }
         $active.removeClass('active');
         $content.hide();
