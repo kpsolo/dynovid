@@ -1,28 +1,27 @@
 // Base
-$base-font-family: 'Raleway', Helvetica, Arial, sans-serif !default;
-$second-font-family: 'Comfortaa', cursive !default;
-
-$screen-xs:                  480px !default;
-$screen-xs-min:              $screen-xs !default;
-$screen-phone:               $screen-xs-min !default;
-
-$screen-sm:                  768px !default;
-$screen-sm-min:              $screen-sm !default;
-$screen-tablet:              $screen-sm-min !default;
-
-$screen-md:                  992px !default;
-$screen-md-min:              $screen-md !default;
-$screen-desktop:             $screen-md-min !default;
-
-$screen-lg:                  1200px !default;
-$screen-lg-min:              $screen-lg !default;
-$screen-lg-desktop:          $screen-lg-min !default;
-
-$screen-null-max:            ($screen-xs-min - 1) !default;
-$screen-xs-max:              ($screen-sm-min - 1) !default;
-$screen-sm-max:              ($screen-md-min - 1) !default;
-$screen-md-max:              ($screen-lg-min - 1) !default;
-
+$base-font-family: 'Raleway',
+Helvetica,
+Arial,
+sans-serif !default;
+$second-font-family: 'Comfortaa' !default;
+//$third-font-family: 'Myriad Pro',
+$third-font-family: 'PT Sans' !default;
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+$screen-phone: $screen-xs-min !default;
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+$screen-tablet: $screen-sm-min !default;
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+$screen-desktop: $screen-md-min !default;
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+$screen-lg-desktop: $screen-lg-min !default;
+$screen-null-max: ($screen-xs-min - 1) !default;
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
 * {
     &,
     &:before,
@@ -40,17 +39,22 @@ body {
     color: #333;
 }
 
-h1 {
-    font-family: $second-font-family;
-}
-
-h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $base-font-family;
 }
 
-
 p {
-    margin: 0 0 10px;
+    padding: 20px 0 0 0;
+    font-family: $base-font-family;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(118, 118, 118);
+    line-height: 1.5;
 }
 
 .hidden {
@@ -59,7 +63,7 @@ p {
 
 a {
     text-decoration: none;
-    transition: color .3s ease;
+    //transition: color .3s ease;
     &:hover,
     &:focus {
         text-decoration: none;
@@ -76,7 +80,7 @@ a {
     height: auto;
 }
 
-@media(max-width: 767px) {
+@media(max-width: $screen-xs-max) {
     .collapse {
         display: none;
     }
@@ -97,59 +101,4 @@ a {
         transition-duration: 0.35s;
         transition-timing-function: ease;
     }
-}
-
-/////////////////////////////
-
-.inside {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.inside-full-height {
-  height: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.row-height {
-  display: table;
-  table-layout: fixed;
-  height: 100%;
-  width: 100%;
-}
-.col-height {
-  display: table-cell;
-  float: none;
-  height: 100%;
-}
-.col-top {
-  vertical-align: top;
-}
-.col-middle {
-  vertical-align: middle;
-}
-.col-bottom {
-  vertical-align: bottom;
-}
-
-@media (min-width: 768px) {
-  .row-sm-height {
-    display: table;
-    table-layout: fixed;
-    height: 100%;
-    width: 100%;
-  }
-  .col-sm-height {
-    display: table-cell;
-    float: none;
-    height: 100%;
-  }
-  .col-sm-top {
-    vertical-align: top;
-  }
-  .col-sm-middle {
-    vertical-align: middle;
-  }
-  .col-sm-bottom {
-    vertical-align: bottom;
-  }
 }

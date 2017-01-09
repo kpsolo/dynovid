@@ -1,76 +1,89 @@
 // Footer
-
 .footer {
-	background-color: #1e1d26;
-	padding: 20px 0;
-	color: #a1a1a1;
-	@media(max-width: 767px) {
-		text-align: center;
-	}
-	p {
-		margin:0;
-		padding: 0;
-		line-height: 38px;
-	}
-	a {
-		color:#fff;
-		&:hover, &:focus {
-			color:#fff;
-		}
-	}
-	&__socil__link {
-		list-style:none;
-		margin:0;
-		padding:0;
-
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		align-items: center;
-		@media(max-width: 767px) {
-			justify-content: center;
-			margin-top: 10px;
-		}
-		li {
-			+ li {
-				margin-left:15px;
-			}
-			a {
-				display: block;
-				@include size(38px);
-				border-radius: 50%;
-				text-align: center;
-				background-color: rgba(#cdab87, .12);
-				position: relative;
-				transition: background .3s ease;
-				&:hover, &:focus {
-					background-color: rgba(#cdab87, .3);
-				}
-				@include p_el(before, null, null) {
-					@include position(absolute, 0);
-					margin:auto;
-				}
-				&.footer__socil__link__instagram {
-					&:before {
-						left: 1px;
-					}
-				}
-			}
-		}
-		&__twitter {
-			&:before {
-				@include sprite(twitter);
-			}
-		}
-		&__facebook {
-			&:before {
-				@include sprite(facebook);
-			}
-		}
-		&__instagram {
-			&:before {
-				@include sprite(instagram);
-			}
-		}
-	}
+    padding: 0 74px;
+    color: #a1a1a1;
+    @media(max-width: $screen-md) {
+        padding: 0;
+    }
+    @media(max-width: $screen-sm-max) {
+        text-align: center;
+    }
+    &-container {
+        background-color: #1e1d26;
+        padding: 20px 0;
+        max-width: 1900px;
+        margin: 0 auto;
+        .container-fluid {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+    p {
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+        line-height: 38px;
+    }
+    a {
+        color: #fff;
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+    }
+    &__socil__link {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        @media(max-width: $screen-sm-max) {
+            justify-content: center;
+            margin-top: 10px;
+        }
+        li {
+            +li {
+                margin-left: 15px;
+            }
+            a {
+                display: block;
+                @include size(38px);
+                border-radius: 50%;
+                text-align: center;
+                background-color: rgba(#cdab87, .12);
+                position: relative;
+                transition: background .3s ease;
+                &:hover,
+                &:focus {
+                    background-color: #c4aea4;
+                }
+                @include p_el(before, null, null) {
+                    @include position(absolute, 0);
+                    margin: auto;
+                }
+                &.footer__socil__link__instagram {
+                    &:before {
+                        left: 1px;
+                    }
+                }
+            }
+        }
+        &__twitter {
+            &:before {
+                @include sprite(twitter);
+            }
+        }
+        &__facebook {
+            &:before {
+                @include sprite(facebook);
+            }
+        }
+        &__instagram {
+            &:before {
+                @include sprite(instagram);
+            }
+        }
+    }
 }
