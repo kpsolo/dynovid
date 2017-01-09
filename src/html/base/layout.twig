@@ -1,5 +1,14 @@
 {# layout.twig #}
 
+{% set index = '' %}
+{% set navigation_bar = [['index.html', 'Home'], ['advertisers.html', 'Advertisers'], ['publishers.html', 'Publishers'], ['technology.html', 'Technology'], ['contacts.html', 'Contacts']] %}
+{% set active_page = active_page|default('index.html') %}
+{% if linkPath == '' %}
+{% set index = 'index.html' %}
+{% else %}
+{% set index = linkPath %}
+{% endif %}
+
 <!doctype html>
 <!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -32,11 +41,11 @@
 					<button class="nav__toggle collapsed" data-toggle="collapse" data-target="#nav__list"><span></span></button>
 					<div id="nav__list" class="collapse">
 						<ul class="nav__list">
-							<li><a class="active" href="/">Home</a></li>
-							<li><a href="/advertisers.html">Advertisers</a></li>
-							<li><a href="/publishers.html">Publishers</a></li>
-							<li><a href="/technology.html">Technology</a></li>
-							<li><a href="/contacts.html">Contacts</a></li>
+							{% for item in navigation_bar %}
+							<li>
+								<a href="{{index}}{{item[0]}}"{% if item[0] == active_page %} class="active"{% endif%}>{{item[1]}}</a>
+							</li>
+							{% endfor %}
 							<li><a class="signup" href="#">Sign Up</a></li>
 						</ul>
 					</div>
