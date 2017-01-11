@@ -1,5 +1,12 @@
 
 
+
+
+
+
+
+
+
 <!doctype html>
 <!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -32,11 +39,27 @@
 					<button class="nav__toggle collapsed" data-toggle="collapse" data-target="#nav__list"><span></span></button>
 					<div id="nav__list" class="collapse">
 						<ul class="nav__list">
-							<li><a class="active" href="/">Home</a></li>
-							<li><a href="/advertisers.html">Advertisers</a></li>
-							<li><a href="/publishers.html">Publishers</a></li>
-							<li><a href="/technology.html">Technology</a></li>
-							<li><a href="/contacts.html">Contacts</a></li>
+							
+							<li>
+								<a href="/index.html">Home</a>
+							</li>
+							
+							<li>
+								<a href="/advertisers.html">Advertisers</a>
+							</li>
+							
+							<li>
+								<a href="/publishers.html">Publishers</a>
+							</li>
+							
+							<li>
+								<a href="/technology.html">Technology</a>
+							</li>
+							
+							<li>
+								<a href="/contacts.html" class="active">Contacts</a>
+							</li>
+							
 							<li><a class="signup" href="#">Sign Up</a></li>
 						</ul>
 					</div>
@@ -49,70 +72,68 @@
 	<main class="main" role="main">
 
 
-<div class="current-link">
-    <div class="current-link-container">
-            <div class="container">
-                <div class="col-sm-12">
-                    <h1>Contacts</h1>
+<div class="container-fluid">
+
+    <div class="row row-pad" id="home">
+        <div class="row-sm-height current-link" id="current-link">
+            <div class="col-sm-12 col-sm-height col-middle">
+                <div class="content">
+                    <div class="h-curent-link">Contacts</div>    
                 </div>
             </div>
-    </div>
-</div>
-
-
-<div class="keyfeatures">
-    <div class="container">
-        <div class="row">
-            <a href="/" class="col-xs-12 col-sm-6 col-md-4" style='background-image: url(/key-feature-1.svg)'>
-                <h3>Phone Number</h3>
-                <p>0 800 555 22 11</p>
-            </a>
-            <a href="/" class="col-xs-12 col-sm-6 col-md-4" style='background-image: url(/key-feature-2.svg)'>
-                <h3>Location</h3>
-                <p>945 Cobblestone Lane 
-                    Hartford, CT 06106</p>
-            </a>
-            <a href="/" class="col-xs-12 col-sm-6 col-md-4" style='background-image: url(/key-feature-3.svg)'>
-                <h3>Mail Adress</h3>
-                <p>dynovid@info.com</p>
-            </a>
-
         </div>
     </div>
-</div>
 
-<div class="message">
-    <div class="container-sm-height">
-        <div class="row row-sm-height">
-            <div class="col-sm-6 col-sm-height text">
-                <h1>Send a Message</h1>
-                <form action="#">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <input type="text" name="name" placeholder="Your name">
-                        </div>
-                        <div class="col-sm-3">
-                            <input type="text" name="email" placeholder="Your e-mail">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <textarea rows="4" name="message" placeholder="Your message"></textarea>
-                        </div>
-                        <div class="col-sm-12 contacts-submit">
-                                <input type="submit" value="Send Message" class="send" onClick="document.getElementById('myModal').style.display = 'block';return false;">
-                        </div>
-                        <div class="button">
-                            <a href="#" class="">Send Message</a>
-                        </div>
-                    </div>
-                </form>
+
+   <div class="row row-pad">
+        <div class="row-sm-height container keycontacts" id="keycontacts">
+            <div class="col-sm-8 col-sm-height col-middle">
+                <a href="tel:+0-800-555-33-22" class="col-xs-12 col-sm-4 col-md-4 key key-1">
+                    <div class="h-key">Phone Number</div>
+                    <p>0 800 555 22 11</p>
+                </a>
+                <a href="https://www.google.com.ua/maps/place/945+Hartford+Ln,+Elk+Grove+Village,+IL+60007,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@42.003316,-87.9830747,17z/data=!3m1!4b1!4m5!3m4!1s0x880fb1a2e3ebfa95:0x81578baa88637b98!8m2!3d42.003316!4d-87.980886" class="col-xs-12 col-sm-4 col-md-4 key key-2">
+                    <div class="h-key">Location</div>
+                    <p>945 Cobblestone Lane Hartford, CT 06106</p>
+                </a>
+                <a href="mailto:dynovid@info.com" class="col-xs-12 col-sm-4 col-md-4 key key-3">
+                    <div class="h-key">Mail Adress</div>
+                    <p>dynovid@info.com</p>
+                </a>
             </div>
         </div>
     </div>
+    
+   <div class="row row-pad">
+        <div class="row-sm-height container sendmessage" id="sendmessage">
+            <div class="col-sm-6 col-sm-height col-middle">
+                <div class="content-right">
+                    <div class="h2-center">Send a Message</div>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-4 col-lg-offset-2">
+                                <input type="text" name="name" placeholder="Your name">
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" name="email" placeholder="Your e-mail">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <textarea rows="6" name="message" placeholder="Your message"></textarea>
+                            </div>
+                            <div class="col-sm-2 button">
+                                    <input type="submit" value="Send Message" onClick="document.getElementById('sendMessage').style.display = 'block';return false;">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
-
-
 
 	</main>
 
@@ -141,6 +162,39 @@
 	<script src="/js/liLanding.js"></script>
 	<script src="/js/main.js"></script>
 
+
+<div id="sendMessage" class="modal">
+    <div class="modal-content thankyou__container">
+        <div class="modal-header">
+            <span class="close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="thankyou__block">
+                <div class="thankyou__img"></div>
+                <div class="thankyou__title">Thank You!</div>
+                <div class="thankyou__text">
+                    <p>We appreciate that you’ve taken the time to write us.</p>
+                    <p>We’ll get back to you very soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+var modal = document.getElementById('sendMessage');
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
 
 
 </body>

@@ -1,58 +1,103 @@
 {# index.twig #}
 {% extends "base/layout.twig" %}
 
-{% block title %} Title {% endblock %}
+{% set active_page = "publishers.html" %}
+
+{% block title %} Publishers {% endblock %}
 
 {% block main %}
+<div class="container-fluid">
 
-
-<div class="current-link">
-    <div class="current-link-container">
-            <div class="container">
-                <div class="col-sm-12">
-                    <h1>Publishers</h1>
+    <div class="row row-pad" id="home">
+        <div class="row-sm-height current-link" id="current-link">
+            <div class="col-sm-12 col-sm-height col-middle">
+                <div class="content">
+                    <div class="h-curent-link">Publishers</div>    
                 </div>
             </div>
+        </div>
     </div>
-</div>
 
-<div class="for-publishers">
-    <div class="container-sm-height">
-        <div class="row row-sm-height">
-            <div class="col-sm-6 col-sm-height text">
-                <h2>For Publishers</h2>
-                <h1>Reach Your<br>Targets with Us</h1>
-                <p>Being a SSP solution for advertisers and publishers from across the world, the Dynovid uses the most sophistaticated algorhythms to help you attract audiences.</p>
-                <p>Ei sed idque summo graecis, clita praesent mediocrem mel eu. Volutpat salutandi vel in, eu nec dico temporibus. Vidisse</p>
-                <div class="button">
-                    <a href="#" class="">Join Us</a>
+    <div class="row row-pad">
+        <div class="row-sm-height forpublishers" id="forpublishers">
+            <div class="col-sm-6 col-sm-height">
+                <div class="photo"><div class="photo-circle"></div></div>
+            </div>
+            <div class="col-sm-6 col-sm-height col-middle">
+                <div class="content">
+                    <div class="h1">For Publishers</div>
+                    <div class="h2">Reach Your Targets with Us</div>
+                    <p>Being a SSP solution for advertisers and publishers from across the world, the Dynovid uses the most sophistaticated algorhythms to help you attract audiences.</p>
+                    <p>Ei sed idque summo graecis, clita praesent mediocrem mel eu. Volutpat salutandi vel in, eu nec dico temporibus. Vidisse</p>
+                    <div class="button">
+                        <a href="/contacts.html">Join Us</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-sm-height photo"></div>
         </div>
     </div>
-</div>
 
-
-<div class="keyfeatures">
-    <div class="container">
-        <div class="row">
-            <a href="/" class="col-xs-12 col-sm-6 col-md-4" style='background-image: url({{ imgPath }}/key-feature-1.svg)'>
-                <h3>01 - Flexible and easy player integration</h3>
-                <p>Customize both look and functionality of our player to provide your audience with the most relevant ads.</p>
-            </a>
-            <a href="/" class="col-xs-12 col-sm-6 col-md-4" style='background-image: url({{ imgPath }}/key-feature-2.svg)'>
-                <h3>02 - 100 percent Fill Rate</h3>
-                <p>We are aimed at providing our publishers with the best traffic monetization solutions. Our managers will help you to maximize your revenue.</p>
-            </a>
-            <a href="/" class="col-xs-12 col-sm-6 col-md-4" style='background-image: url({{ imgPath }}/key-feature-3.svg)'>
-                <h3>03 - Highest CPM for premium publishers</h3>
-                <p>The more targeted traffic you deliver, the higher CPM you get. The auctions held between our adverts aimed at buying high quality traffic on the best price.</p>
-            </a>
+   <div class="row row-pad">
+        <div class="row-sm-height features" id="features">
+            <div class="col-sm-12 col-height">
+                <div class="col-lg-4 col-md-6 col-sm-height col-middle key-1">
+                    <div class="content">
+                        <a href="/" class="">
+                            <div class="row">
+                                <div class="col-xs-4 h2">01</div>
+                                <div class="col-xs-8 h1-key">Flexible and easy player integration</div>
+                            </div>
+                            <div class="row">
+                                <p class="col-xs-12">Customize both look and functionality of our player to provide your audience with the most relevant ads.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-height col-middle key-2">
+                    <div class="content">
+                        <a href="/" class="">
+                            <div class="row">
+                                <div class="col-xs-4 h2">02</div>
+                                <div class="col-xs-8 h1-key">100 percent<br>Fill Rate</div>
+                            </div>
+                            <div class="row">
+                                <p class="col-xs-12">We are aimed at providing our publishers with the best traffic monetization solutions. Our managers will help you to maximize your revenue.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-height col-middle key-1">
+                    <div class="content">
+                        <a href="/" class="">
+                            <div class="row">
+                                <div class="col-xs-4 h2">03</div>
+                                <div class="col-xs-8 h1-key">Highest CPM for premium publishers</div>
+                            </div>
+                            <div class="row">
+                                <p class="col-xs-12">The more targeted traffic you deliver, the higher CPM you get. The auctions held between our adverts aimed at buying high quality traffic on the best price.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
+
+    <div class="row row-pad" id="home">
+        <div class="row-sm-height buildsuccess" id="buildsuccess">
+            <div class="col-sm-12 col-sm-height col-middle">
+                <div class="content">
+                    <div class="h1-center">Your Success</div>
+                    <div class="h2-center">We Build Your<br>Success</div>
+                    <div class="button-center">
+                        <a href="#" class="">Start Now</a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
 <div class="signup">
     <div class="signup-content container container-sm-height">
         <div class="row row-sm-height">
@@ -66,6 +111,7 @@
         </div>
     </div>
 </div>
-
+-->
+</div>
 {% endblock %}
 

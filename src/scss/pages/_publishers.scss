@@ -1,0 +1,262 @@
+/**********************************************************************************/
+
+.forpublishers {
+    .photo {
+        height: 750px;
+        &-circle {
+            margin-left: auto;
+            padding: 0;
+            background-image: url($imgPathCss+'/forpublishers.jpg');
+            background-position-x: calc(50% + 110px);
+        }
+    }
+    .content {
+        padding: 0 31% 0 60px;
+    }
+}
+
+
+/**********************************************************************************/
+
+.features {
+    padding: 0;
+    .key-1,
+    .key-2 {
+        height: 388px;
+        text-align: center;
+        text-decoration: none;
+        .content {}
+        .h2 {
+            font-size: rem(60);
+            color: rgb(196, 174, 164);
+            min-width: 95px;
+            padding: 0 !important;
+            &:before {
+                position: absolute;
+                content: ' ';
+                top: calc(50%);
+                left: 85px;
+                background-color: #c4aea4;
+                width: 40px;
+                height: 4px;
+            }
+            @media (min-width: $screen-sm) and (max-width: 1370px) {
+                margin-bottom: 20px;
+                text-align: center;
+                &:before {
+                    display: none;
+                }
+                &:after {
+                    position: absolute;
+                    content: ' ';
+                    bottom: -10px;
+                    left: calc(50% - 21px);
+                    background-color: #c4aea4;
+                    width: 42px;
+                    height: 4px;
+                }
+            }
+        }
+        .h1-key {
+            color: rgb(47, 47, 47);
+            line-height: 1.1;
+            font-size: rem(24);
+            font-family: $second-font-family;
+            text-align: left;
+            padding: 5px 0 0 40px;
+        }
+        p {
+            color: rgb(118, 118, 118);
+            line-height: 1.5;
+            font-size: rem(16);
+            font-family: $base-font-family;
+            text-align: left;
+            padding: 20px 20px 0 0;
+        }
+        @media(max-width: 1314px) {
+            background-position: center 40px;
+            .h-key {
+                //line-height: 1.5;
+                padding: 0px 0 0 0;
+            }
+            &:after {
+                background-position: center 380px;
+            }
+        }
+    }
+    .key-1 {
+        background-color: rgb(242, 240, 233);
+    }
+    .key-2 {
+        background-color: rgb(250, 249, 245);
+    }
+}
+
+.buildsuccess {
+    height: 540px !important;
+    background-image: url($imgPathCss+'/buildsuccess.jpg');
+    background-position-y: 65%;
+    &:before {
+        padding: 0;
+        content: '';
+        @include position(absolute, 0);
+        background-color: rgba(30, 29, 38, 0.661);
+    }
+    .content {
+        vertical-align: middle;
+        padding: 150px 0;
+    }
+    .h1-center {
+        color: rgb(250, 249, 245);
+        font-weight: bold;
+        line-height: 1.5;
+    }
+    .h2-center {
+        color: rgb(255, 255, 255);
+        line-height: 1.019;
+        &::before {
+            display: none;
+        }
+    }
+    .button-center {
+        padding: 0;
+    }
+}
+
+
+/**********************************************************************************/
+
+
+/**********************************************************************************/
+
+
+/**********************************************************************************/
+
+
+/**********************************************************************************/
+
+
+/* Large desktops and laptops */
+
+@media (min-width: $screen-lg-min) {}
+
+
+/* Landscape tablets and medium desktops */
+
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+    .forpublishers {
+        .photo {
+            &-circle {
+                background-position: center;
+                width: 400px;
+                height: 400px;
+            }
+        }
+        .content {
+            padding: 0 20px 0 10%;
+        }
+    }
+}
+
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    .forpublishers {
+        .photo {
+            &-circle {
+                background-position: center;
+                width: 370px;
+                height: 370px;
+            }
+        }
+        .content {
+            padding: 0 20px 0 20px;
+        }
+    }
+    .keyfeatures {
+        .key-1,
+        .key-2,
+        .key-3,
+        .key-4 {
+            background-position: center 80px;
+            .h-key {
+                padding: 160px 0 0 0;
+            }
+        }
+    }
+}
+
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: $screen-xs-max) {
+    .forpublishers {
+        .photo {
+            &-circle {
+                background-position: center;
+                width: 370px;
+                height: 370px;
+            }
+        }
+        .content {
+            padding: 0 15px 0 15px;
+        }
+        .h1 {
+            text-align: center;
+        }
+        .h2 {
+            text-align: center;
+            padding-right: 0px;
+            &:before {
+                left: calc(50% - 21px);
+            }
+        }
+        p {
+            text-align: center;
+        }
+        .button {
+            text-align: center;
+        }
+    }
+    .features {
+        .key-1,
+        .key-2 {
+            height: auto;
+            background-position: center 80px;
+            .h-key {
+                padding: 160px 0 0 0;
+            }
+            .content {
+                padding: 25px;
+            }
+        }
+    }
+}
+
+
+/* Portrait phones and smaller */
+
+@media (max-width: $screen-xs) {
+    .features {
+        .key-1,
+        .key-2 {
+            .h2 {
+                margin-bottom: 20px;
+                text-align: center;
+                &:before {
+                    display: none;
+                }
+                &:after {
+                    position: absolute;
+                    content: ' ';
+                    bottom: -10px;
+                    left: calc(50% - 21px);
+                    background-color: #c4aea4;
+                    width: 42px;
+                    height: 4px;
+                }
+            }
+        }
+    }
+}

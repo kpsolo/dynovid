@@ -1,0 +1,304 @@
+    /**********************************************************************************/
+    
+    .technology {
+        padding: 55px 0 55px 0;
+        .content {
+            padding: 25px 70px 25px 150px;
+        }
+        .content-right {
+            padding: 25px 15% 25px 0;
+            margin: 0;
+            .row {
+                padding: 25px 0 25px 0;
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                flex-direction: row;
+                &:not(:last-of-type) {
+                    border-bottom: 1px solid rgba(0, 0, 0, .071);
+                }
+                .text {
+                    margin-right: auto;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .h1-inf {
+                    text-align: left;
+                }
+                p {
+                    text-align: left;
+                    padding: 0;
+                    margin: 0;
+                }
+                .price {
+                    margin-left: auto;
+                }
+                .pic1,
+                .pic2,
+                .pic3 {
+                    margin: 15px;
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    overflow: hidden;
+                    text-align: center;
+                }
+                .pic1 {
+                    background-image: url($imgPathCss+'/satisfied.png');
+                }
+                .pic2 {
+                    background-image: url($imgPathCss+'/valuable.png');
+                }
+                .pic3 {
+                    background-image: url($imgPathCss+'/finished.png');
+                }
+            }
+        }
+        @media (min-width: $screen-xs-max) and (max-width: 1500px) {
+            .col-top {
+                vertical-align: middle;
+            }
+            .content {
+                padding: 25px;
+            }
+            .content-right {
+                padding: 25px;
+                .h1,
+                p {
+                    text-align: center
+                }
+                .row {
+                    flex-direction: column;
+                    .text {
+                        margin-right: 0;
+                    }
+                    .h1-inf {
+                        text-align: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                    .price {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    //////////////////////////////////////////////////////////////////////////
+    .ourservices {
+        .photo {
+            height: 700px;
+            background-image: url($imgPathCss+'/ourservices.jpg');
+        }
+        .content {
+            height: 100%;
+            padding: 0;
+            position: relative;
+            display: flex;
+            align-content: stretch;
+            flex-wrap: wrap;
+            background-color: rgb(250, 249, 245);
+            .card {
+                margin: 0;
+                padding: 12% 25px 0px 40px;
+                display: inline-flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: stretch;
+                max-width: 50%;
+                .pic {
+                    margin: 0px 25px 25px 0;
+                    width: 39px;
+                    height: 39px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    overflow: hidden;
+                    text-align: center;
+                }
+                .pic-1 {
+                    background-image: url($imgPathCss+'/realtime.png');
+                }
+                .pic-2 {
+                    background-image: url($imgPathCss+'/vast.png');
+                }
+                .pic-3 {
+                    background-image: url($imgPathCss+'/vpaid.png');
+                }
+                .pic-4 {
+                    background-image: url($imgPathCss+'/vmap.png');
+                }
+                .text {
+                    display: inline-block;
+                    width: 80%;
+                    .h1-inf {
+                        display: inline-block;
+                        text-align: left;
+                    }
+                    p {
+                        text-align: left;
+                        margin: 0;
+                        font-size: rem(14);
+                        color: rgb(118, 118, 118);
+                        line-height: 1.571;
+                    }
+                }
+            }
+        }
+        @media (min-width: $screen-xs-max) and (max-width: 1680px) {
+            .content {
+                .card {
+                    padding: 12% 15px 0px 15px;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 50%;
+                    .pic {
+                        margin: 0px 0px 25px 0;
+                    }
+                    .text {
+                        width: 100%;
+                        .h1-inf {
+                            display: block;
+                            text-align: center;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    ///////////////////////////////////////////////////////////////////////////
+    .sendmessage {
+        .content-right {
+            .h2-center {
+                padding: 7px 0 27px 0;
+                text-align: center;
+            }
+        }
+        .photo {
+            height: 700px;
+            background-image: url($imgPathCss+'/request-2.jpg');
+            background-position-x: calc(50% - 80px);
+        }
+    }
+    /**********************************************************************************/
+    /**********************************************************************************/
+    /* Large desktops and laptops */
+    
+    @media (min-width: $screen-lg-min) {}
+    /* Landscape tablets and medium desktops */
+    
+    @media (min-width: $screen-md) and (max-width: $screen-md-max) {}
+    /* Portrait tablets and small desktops */
+    
+    @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {}
+    /* Landscape phones and portrait tablets */
+    
+    @media (max-width: $screen-xs-max) {
+        .col-top {
+            vertical-align: middle;
+        }
+        .technology {
+            .content {
+                padding: 25px;
+                .h1,
+                p {
+                    text-align: center
+                }
+                .h2 {
+                    text-align: center;
+                    padding-right: 0px;
+                    &:before {
+                        left: calc(50% - 21px);
+                    }
+                }
+                .button {
+                    text-align: center;
+                }
+            }
+            .content-right {
+                padding: 35px;
+                .h1,
+                p {
+                    text-align: center
+                }
+                @media (max-width: 550px) {
+                    .row {
+                        flex-direction: column;
+                        .text {
+                            margin-right: 0;
+                        }
+                        .h1-inf {
+                            text-align: center;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                        .price {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .ourservices {
+            .content {
+                flex-direction: column;
+                .card {
+                    padding: 5% 25px 5% 40px;
+                    flex-direction: row;
+                    //align-items: 
+                    max-width: 100%;
+                    .pic {
+                        margin: 0px 25px 25px 0;
+                    }
+                    .text {
+                        width: 80%;
+                        .h1-inf {
+                            display: block;
+                            text-align: left;
+                        }
+                        p {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Portrait phones and smaller */
+    
+    @media (max-width: $screen-xs) {
+        .ourservices {
+            .content {
+                .card {
+                    padding: 10% 15px 10% 15px;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 100%;
+                    .pic {
+                        margin: 0px 0px 25px 0;
+                    }
+                    .text {
+                        width: 100%;
+                        .h1-inf {
+                            display: block;
+                            text-align: center;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }

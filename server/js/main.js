@@ -119,11 +119,12 @@ $('.events ul').each(function() {
         $(this.hash).hide();
     });
 
+
     $(this).on('click', 'a', function(e) {
 
         if (!$(".event").is(':visible')) {
+            $(".events .photo").toggleClass("no-text");
             $(".event").show();
-            $(".event div.photo:before").hide();
         }
         $active.removeClass('active');
         $content.hide();

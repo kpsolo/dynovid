@@ -1,0 +1,104 @@
+/**********************************************************************************/
+
+.keycontacts {
+    padding: 60px 0;
+    .key {
+        position: relative;
+        display: inline-block;
+        height: 230px;
+        background-position: center 70px;
+        background-size: auto 41px;
+        background-repeat: no-repeat;
+        text-align: center;
+        text-decoration: none;
+        .h-key {
+            font-size: rem(24);
+            font-family: $second-font-family;
+            color: rgb(43, 43, 43);
+            line-height: 2.292;
+            text-align: center;
+            padding: 115px 0 0 0;
+        }
+        p {
+            font-size: rem(15);
+            font-family: $second-font-family;
+            color: rgb(187, 187, 187);
+            line-height: 1.333;
+            text-align: center;
+            padding: 0 20%;
+            margin: 0;
+        }
+    }
+    .key-1 {
+        background-image: url($imgPathCss+'/con-phone.png');
+    }
+    .key-2 {
+        background-image: url($imgPathCss+'/con-location.png');
+    }
+    .key-3 {
+        background-image: url($imgPathCss+'/con-mail.png');
+    }
+}
+
+.sendmessage {
+    padding: 120px 0;
+    .content-right {
+        .h2-center {
+            padding: 7px 0 27px 0;
+            text-align: center;
+        }
+    }
+    .photo {
+        height: 700px;
+        background-image: url($imgPathCss+'/request-2.jpg');
+        background-position-x: calc(50% - 80px);
+    }
+}
+
+
+/**********************************************************************************/
+
+
+/**********************************************************************************/
+
+
+/* Large desktops and laptops */
+
+@media (min-width: $screen-lg-min) {}
+
+
+/* Landscape tablets and medium desktops */
+
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {}
+
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {}
+
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: $screen-xs-max) {
+    .keycontacts {
+        padding: 0;
+        .key {
+            .h-key {
+                font-size: rem(24);
+                font-family: $second-font-family;
+                color: rgb(43, 43, 43);
+                line-height: 2.292;
+                text-align: center;
+                padding: 115px 0 0 0;
+            }
+            p {
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+
+/* Portrait phones and smaller */
+
+@media (max-width: $screen-xs) {}

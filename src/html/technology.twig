@@ -1,134 +1,186 @@
 {# technology.twig #}
 {% extends "base/layout.twig" %}
 
+{% set active_page = "technology.html" %}
+
 {% block head %}{{ parent() }}{% endblock %}
 
 {% block title %}Technology{% endblock %}
 
 {% block main %}
+<div class="container-fluid">
 
-<div class="current-link">
-    <div class="current-link-container">
-            <div class="container">
-                <div class="col-sm-12">
-                    <h1>Technology</h1>
-                </div>
-            </div>
-    </div>
-</div>
-
-<div class="our-technology-1">
-    <div class="container-sm-height">
-        <div class="row row-sm-height">
-            <div class="col-sm-6 col-sm-height text">
-                <h2>Technology</h2>
-                <h1>About Our<br>Technology</h1>
-                <p>Being a SSP solution for advertisers and publishers from across the world, the Dynovid uses the most sophistaticated algorhythms to help you attract audiences.Ei sed idque summo graecis, clita praesent mediocrem mel eu. Volutpat salutandi vel in.</p>
-                <div class="button">
-                    <a href="#" class="">More Info</a>
-                </div>
-            </div>
-            <div class="col-sm-6 col-sm-height text">
-                <div class="row">
-                    <div class="col1">pic1</div>
-                    <div class="col2">
-                        <h2>Satisfied Clients</h2>
-                        <p>Being a SSP solution for advertisers</p>
-                    </div>
-                    <div class="col3">2000</div>
-                </div>
-                <div class="row">
-                    <div class="col1">pic2</div>
-                    <div class="col2">
-                        <h2>Valuable Partners</h2>
-                        <p>Being a SSP solution for advertisers</p>
-                    </div>
-                    <div class="col3">200</div>
-                </div>
-                <div class="row">
-                    <div class="col1">pic3</div>
-                    <div class="col2">
-                        <h2>Finished Projects</h2>
-                        <p>Being a SSP solution for advertisers</p>
-                    </div>
-                    <div class="col3">1500</div>
+    <div class="row row-pad" id="home">
+        <div class="row-sm-height current-link" id="current-link">
+            <div class="col-sm-12 col-sm-height col-middle">
+                <div class="content">
+                    <div class="h-curent-link">Technology</div>    
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="our-technology-2">
-    <div class="container-sm-height">
-        <div class="row row-sm-height">
-            <div class="col-sm-6 col-sm-height photo"></div>
-            <div class="col-sm-6 col-sm-height text">
-                <div class="row">
-                    <div class="col1">pic1</div>
-                    <div class="col2">
-                        <h2>Real-time Bidding</h2>
-                        <p>DynoVid buys and sells impressions via programmatic auctions, which are aimed at providing both advertisers and publishers with the most relevant bids for traffic.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col1">pic2</div>
-                    <div class="col2">
-                        <h2>VAST</h2>
-                        <p>sing generally accepted standard our clients can buy and sell pre-roll, post-roll and overlay ads.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col1">pic3</div>
-                    <div class="col2">
-                        <h2>VPAID</h2>
-                        <p>Establish a common interface between video players and ad units. Is used with specific ad formats/player sizes or when interactivity is needed.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col1">pic3</div>
-                    <div class="col2">
-                        <h2>VMAP</h2>
-                        <p>Video Multiple Ad Playlist specification is used when you need an additional control on instream insertion advertising.</p>
+<div class="row row-pad">
+        <div class="row-sm-height technology" id="technology">
+            <div class="col-sm-6 col-sm-height col-top">
+                <div class="content">
+                    <div class="h1">Technology</div>
+                    <div class="h2">About Our Technology</div>
+                    <p>Being a SSP solution for advertisers and publishers from across the world, the Dynovid uses the most sophistaticated algorhythms to help you attract audiences.Ei sed idque summo graecis, clita praesent mediocrem mel eu. Volutpat salutandi vel in.</p>
+                    <div class="button">
+                        <a href="#" class="">More Info</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="col-sm-6 col-sm-height content-right">
 
-<div class="message">
-    <div class="container-sm-height">
-        <div class="row row-sm-height">
-            <div class="col-sm-6 col-sm-height text">
-                <h1>Send a Message</h1>
-                <form action="#">
+                    <div class="h1">Information</div>
+                    
                     <div class="row">
-                        <div class="col-sm-3">
-                            <input type="text" name="name" placeholder="Your name">
+                        <div class="pic1"></div>
+                        <div class="text">
+                            <div class="h1-inf">Satisfied Clients</div>
+                            <p>Being a SSP solution for advertisers</p>
                         </div>
-                        <div class="col-sm-3">
-                            <input type="text" name="email" placeholder="Your e-mail">
-                        </div>
+                        <div class="price">2000</div>
                     </div>
+                    
                     <div class="row">
-                        <div class="col-sm-12">
-                            <textarea rows="4" name="message" placeholder="Your message"></textarea>
+                        <div class="pic2"></div>
+                        <div class="text">
+                            <div class="h1-inf">Valuable Partners</div>
+                            <p>Being a SSP solution for advertisers</p>
                         </div>
-                        <div class="col-sm-12 contacts-submit">
-                                <input type="submit" value="Send Message" class="send" onClick="document.getElementById('myModal').style.display = 'block';return false;">
-                        </div>
-                        <div class="button">
-                            <a href="#" class="">Send Message</a>
-                        </div>
+                        <div class="price">200</div>
                     </div>
-                </form>
-            </div>
+                    
+                    <div class="row">
+                        <div class="pic3"></div>
+                        <div class="text">
+                            <div class="h1-inf">Finished Projects</div>
+                            <p>Being a SSP solution for advertisers</p>
+                        </div>
+                        <div class="price">1500</div>
+                    </div>
 
-            <div class="col-sm-6 col-sm-height photo"></div>
+            </div>
         </div>
     </div>
-</div>
 
+    <div class="row row-pad">
+        <div class="row-sm-height ourservices" id="ourservices">
+            
+            <div class="col-sm-6 col-sm-height">
+                <div class="photo"></div>
+            </div>
+           
+            <div class="col-sm-6 col-height col-middle">
+                <div class="content">
+
+                    <div class="card">
+                        <div class="pic pic-1"></div>
+                        <div class="text">
+                            <div class="h1-inf">Real-time Bidding</div>
+                            <p>DynoVid buys and sells impressions via programmatic auctions, which are aimed at providing both advertisers and publishers with the most relevant bids for traffic.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pic pic-2"></div>
+                        <div class="text">
+                            <div class="h1-inf">VAST</div>
+                            <p>sing generally accepted standard our clients can buy and sell pre-roll, post-roll and overlay ads.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pic pic-3"></div>
+                        <div class="text">
+                            <div class="h1-inf">VPAID</div>
+                            <p>Establish a common interface between video players and ad units. Is used with specific ad formats/player sizes or when interactivity is needed.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="pic pic-4"></div>
+                        <div class="text">
+                            <div class="h1-inf">VMAP</div>
+                            <p>Video Multiple Ad Playlist specification is used when you need an additional control on instream insertion advertising.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row row-pad">
+        <div class="row-sm-height sendmessage" id="sendmessage">
+            <div class="col-sm-6 col-sm-height col-middle">
+                <div class="col-sm-12 content-right">
+                    <div class="h2-center">Send a Message</div>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-4 col-lg-offset-2">
+                                <input type="text" name="name" placeholder="Your name">
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" name="email" placeholder="Your e-mail">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <textarea rows="6" name="message" placeholder="Your message"></textarea>
+                            </div>
+                            <div class="col-sm-2 button">
+                                    <input type="submit" value="Send Message" onClick="document.getElementById('sendMessage').style.display = 'block';return false;">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-6 col-sm-height">
+                <div class="photo"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
 {% endblock %}
 
 {% block footer %}{{ parent() }}{% endblock %}
+
+{% block modal %}
+<div id="sendMessage" class="modal">
+    <div class="modal-content thankyou__container">
+        <div class="modal-header">
+            <span class="close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="thankyou__block">
+                <div class="thankyou__img"></div>
+                <div class="thankyou__title">Thank You!</div>
+                <div class="thankyou__text">
+                    <p>We appreciate that you’ve taken the time to write us.</p>
+                    <p>We’ll get back to you very soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+var modal = document.getElementById('sendMessage');
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+{% endblock %}
