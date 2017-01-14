@@ -1,5 +1,11 @@
 .header {
     padding: 15px 0;
+    > .container {
+        @media(min-width: 1500px) {
+            max-width: 1500px;
+            width: 100%;
+        }
+    }
 }
 
 .logo {
@@ -96,9 +102,15 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
         }
         li {
-            padding: 0 10px;
+            padding: 0 25px;
             &:last-of-type {
-                padding: 0 0 0 10px;
+                padding: 0 0 0 25px;
+            }
+            @media(max-width: 1200px) {
+                padding: 0 10px;
+                &:last-of-type {
+                    padding: 0 0 0 10px;
+                }
             }
             @media(max-width: 992px) {
                 padding: 0 7px;
@@ -120,6 +132,7 @@
             }
             a {
                 display: inline-block;
+                font-weight: 600;
                 color: #4c4c4c;
                 position: relative;
                 @media(max-width: 767px) {
@@ -129,7 +142,7 @@
                     text-align: center;
                 }
                 @include p_el(before, 0, 2px) {
-                    @include position(absolute, null null -10px 0);
+                    @include position(absolute, null null -5px 0);
                     background-color: #ac252f;
                     transition: width .3s ease, height .3s ease;
                     @media(max-width: 767px) {
@@ -157,7 +170,7 @@
                     padding: 10px 25px;
                     color: #fff;
                     white-space: nowrap;
-                    transition: background .3s ease;
+                    transition: background .3s ease, color .3s ease;
                     &:hover,
                     &:focus {
                         background-color: #fff;

@@ -11,25 +11,16 @@ body {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 140%;
+  line-height: 1.5;
   background-color: #fff;
   color: #333; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h2-center, .h3, .h4, .h5, .h6 {
+  font-family: "Comfortaa", cursive; }
 
 p {
-  padding: 18px 0 0 0;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 16px;
   font-weight: 600;
-  color: #767676;
-  line-height: 1.5; }
+  color: #767676; }
 
 .hidden {
   display: none; }
@@ -66,6 +57,10 @@ a {
 
 .header {
   padding: 15px 0; }
+  @media (min-width: 1500px) {
+    .header > .container {
+      max-width: 1500px;
+      width: 100%; } }
 
 .logo a {
   display: inline-block;
@@ -172,9 +167,14 @@ a {
               flex-direction: column;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35); } }
   .nav__list li {
-    padding: 0 10px; }
+    padding: 0 25px; }
     .nav__list li:last-of-type {
-      padding: 0 0 0 10px; }
+      padding: 0 0 0 25px; }
+    @media (max-width: 1200px) {
+      .nav__list li {
+        padding: 0 10px; }
+        .nav__list li:last-of-type {
+          padding: 0 0 0 10px; } }
     @media (max-width: 992px) {
       .nav__list li {
         padding: 0 7px; }
@@ -192,6 +192,7 @@ a {
           border-bottom: 0; } }
     .nav__list li a {
       display: inline-block;
+      font-weight: 600;
       color: #4c4c4c;
       position: relative; }
       @media (max-width: 767px) {
@@ -205,7 +206,7 @@ a {
         width: 0;
         height: 2px;
         position: absolute;
-        bottom: -10px;
+        bottom: -5px;
         left: 0;
         background-color: #ac252f;
         transition: width .3s ease, height .3s ease; }
@@ -232,7 +233,7 @@ a {
         padding: 10px 25px;
         color: #fff;
         white-space: nowrap;
-        transition: background .3s ease; }
+        transition: background .3s ease, color .3s ease; }
         .nav__list li a.signup:hover, .nav__list li a.signup:focus {
           background-color: #fff;
           color: #ac252f; }
@@ -256,6 +257,9 @@ a {
     .footer-container .container-fluid {
       max-width: 1200px;
       margin: 0 auto; }
+      @media (min-width: 1500px) {
+        .footer-container .container-fluid {
+          max-width: 1500px; } }
   .footer p {
     font-weight: 500;
     margin: 0;
@@ -326,7 +330,7 @@ a {
 .h1,
 .h1-center {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
   color: #ac252f;
@@ -338,10 +342,9 @@ a {
 
 .h2,
 .h2-center {
-  font-family: "Comfortaa";
   font-size: 3.375rem;
   font-weight: 500;
-  line-height: 1.019;
+  line-height: 1;
   padding: 7px 25% 27px 0;
   margin: 0;
   color: #2f2f2f;
@@ -365,13 +368,13 @@ a {
       font-size: 2.375rem; } }
   .h2:before,
   .h2-center:before {
+    content: '';
+    width: 42px;
+    height: 4px;
     position: absolute;
-    content: ' ';
     bottom: 0;
     left: 0;
-    background-color: #c4aea4;
-    width: 42px;
-    height: 4px; }
+    background-color: #c4aea4; }
 
 .h2-center {
   text-align: center;
@@ -392,15 +395,15 @@ a {
     left: calc(50% - 21px); }
 
 .h1-inf {
-  font-size: 24px;
-  font-family: "Comfortaa";
+  font-size: 1.5rem;
+  font-family: "Comfortaa", cursive;
   color: #2f2f2f;
   line-height: 1;
   padding: 0; }
 
 .price {
   font-size: 3rem;
-  font-family: "Comfortaa";
+  font-family: "Comfortaa", cursive;
   line-height: 1;
   color: #c4aea4;
   text-align: right; }
@@ -409,7 +412,7 @@ a {
   position: relative;
   margin: auto 0;
   padding: 0;
-  font-family: "Comfortaa";
+  font-family: "Comfortaa", cursive;
   font-size: 3.75rem;
   line-height: 1.367;
   color: white;
@@ -458,22 +461,19 @@ a {
   .button-center input[type="submit"],
   .button-center a {
     display: inline-block;
-    font-family: "Comfortaa";
-    font-size: 18px;
-    color: white;
-    font-weight: 500;
+    font-family: "Comfortaa", cursive;
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 600;
     line-height: 1.8;
     text-align: center;
     text-decoration: none;
     background-color: #ac252f;
     width: 193px;
-    height: 60px;
     padding: 10px 45px;
     border-radius: 60px;
-    border-color: #ac252f;
-    border-width: 2.07px;
-    border-style: solid;
-    transition: background .3s ease; }
+    border: 2px solid #ac252f;
+    transition: background .3s ease, color .3s ease; }
     .button input[type="submit"]:hover, .button input[type="submit"]:focus,
     .button a:hover,
     .button a:focus,
@@ -492,7 +492,8 @@ a {
   .button input[type="submit"],
   .button-center input[type="submit"] {
     width: 212px;
-    padding: 0; }
+    line-height: 1.8;
+    padding: 10px 45px; }
 
 .button-center {
   text-align: center; }
@@ -515,25 +516,23 @@ form {
   position: relative; }
   form input,
   form textarea {
-    border-style: none;
+    border: 1px solid transparent;
     border-radius: 10px;
     background-color: #f7f6f2;
     width: 100%;
-    height: 61px;
-    padding: 5px 20px;
+    padding: 15px 20px;
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: "Comfortaa";
-    font-size: 15px;
+    font-family: "Comfortaa", cursive;
+    font-size: 0.9375rem;
     color: #6d6d6d;
     font-weight: 300;
-    text-align: left; }
+    text-align: left;
+    transition: border-color .3s ease; }
     form input:hover, form input:focus,
     form textarea:hover,
     form textarea:focus {
-      border-color: #c4aea4;
-      border-style: solid;
-      border-width: 0.99px; }
+      border-color: #c4aea4; }
   form textarea {
     resize: vertical;
     padding: 15px 20px;
@@ -622,14 +621,14 @@ form {
     .modal-content {
       padding: 40px 15px; } }
   .modal-content .modal-header h1 {
-    font-family: "Comfortaa";
+    font-family: "Comfortaa", cursive;
     text-align: left;
     font-size: 30px;
     color: #1f1e1e; }
   .modal-content .modal-header h2 {
     padding-top: 15px;
     margin-bottom: 20px;
-    font-family: "Comfortaa";
+    font-family: "Comfortaa", cursive;
     text-align: left;
     font-size: 16px;
     color: #aeaeae; }
@@ -736,7 +735,7 @@ form {
 
 .thankyou__title {
   color: #00377d;
-  font-family: "Comfortaa";
+  font-family: "Comfortaa", cursive;
   font-size: 36px;
   font-weight: 500;
   margin: 20px 0 10px;
@@ -751,10 +750,9 @@ form {
 .slider-info {
   position: fixed;
   top: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   width: 74px;
-  font-size: 10px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -764,53 +762,80 @@ form {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center; }
   .slider-info ul {
-    padding: 0px;
-    vertical-align: middle;
-    list-style: none;
-    display: table-cell;
-    float: none; }
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
   .slider-info a {
     display: block;
     padding: 10px 0;
-    font-family: "Comfortaa";
-    line-height: 2.571;
-    font-weight: 500;
-    font-size: 0.875rem;
-    font-weight: 800;
-    color: #b1b1b1; }
-  .slider-info .cur {
-    color: #ac252f; }
+    height: 46px;
+    line-height: 46px;
+    font-weight: 700;
+    font-size: 0.625rem;
+    color: #b1b1b1;
+    transition: font-size .3s ease, color .3s ease; }
+    .slider-info a:hover, .slider-info a:focus {
+      color: #ac252f; }
+    .slider-info a.cur {
+      color: #ac252f;
+      font-size: 0.875rem;
+      font-weight: 800; }
+
+@media (max-width: 767px) {
+  .home-slider {
+    padding: 0; } }
 
 .home-slider .col-sm-height {
   padding: 0; }
 
 .home-slider .content,
 .home-slider .content-on {
-  width: 100%;
   height: 100vh;
+  width: 100%;
   display: block;
   max-height: 900px;
   margin: 0;
-  padding: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-top: 37vh; }
+  padding: 0; }
 
 .home-slider .content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  text-align: center;
   background: url("/img/dynovid-main.jpg") no-repeat;
   background-size: cover;
   background-position-y: -15px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
   .home-slider .content:before, .home-slider .content:after {
-    position: absolute;
     content: '';
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -825,10 +850,12 @@ form {
     background-color: rgba(14, 14, 14, 0.85); }
   .home-slider .content .clip-text {
     position: static;
-    font-family: "Comfortaa";
+    font-family: "Comfortaa", cursive;
     font-size: 10.75rem;
-    line-height: 0.65; }
-    @media (max-width: 768px) {
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 40px; }
+    @media (max-width: 767px) {
       .home-slider .content .clip-text {
         font-size: 6.875rem; } }
     @media (max-width: 480px) {
@@ -837,63 +864,97 @@ form {
 
 .home-slider .content-on {
   position: absolute;
-  z-index: 0;
-  height: 100vh;
-  padding-top: 49.8vh; }
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 55px;
+  z-index: 0; }
   .home-slider .content-on .h1-center {
     padding: 0;
+    font-family: "Comfortaa", cursive;
     font-size: 1.5625rem;
-    color: white;
-    font-weight: 500;
-    line-height: 3.28; }
+    color: #fff;
+    font-weight: 400;
+    line-height: 44px; }
     @media (max-width: 768px) {
       .home-slider .content-on .h1-center {
         font-size: 1.25rem; } }
   .home-slider .content-on .button {
     padding: 0;
-    text-align: center;
-    color: #fff; }
-    .home-slider .content-on .button a:hover,
-    .home-slider .content-on .button a:focus {
-      background-color: transparent;
-      color: #fff; }
+    margin-top: 30px;
+    text-align: center; }
+    .home-slider .content-on .button a {
+      transition: background .3s ease, border .3s ease; }
+      .home-slider .content-on .button a:hover, .home-slider .content-on .button a:focus {
+        background-color: #821c24;
+        border-color: #821c24;
+        color: #fff; }
 
-.circle,
-.circle:after,
-.circle:before {
+.circle {
+  position: absolute;
   top: calc(50% - 290px);
   left: calc(50% - 290px);
-  position: absolute;
-  content: '';
-  margin: 0px;
+  margin: 0;
   padding: 100px;
   background: transparent;
-  width: 580px;
   height: 580px;
+  width: 580px;
   border-radius: 50%;
-  border-color: rgba(255, 255, 255, 0.051);
-  border-width: 22px;
-  border-style: solid; }
+  border: 22px solid rgba(255, 255, 255, 0.051); }
   @media (max-width: 480px) {
-    .circle,
-    .circle:after,
-    .circle:before {
+    .circle {
       display: none;
       width: 0; } }
-
-.circle:after {
-  position: absolute;
-  top: 33px;
-  left: 33px;
-  width: 470px;
-  height: 470px; }
-
-.circle:before {
-  position: absolute;
-  top: 88px;
-  left: 88px;
-  width: 360px;
-  height: 360px; }
+  .circle-inner {
+    position: absolute; }
+    .circle-inner-top, .circle-inner-bottom {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+      .circle-inner-top:before, .circle-inner-bottom:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 22px solid rgba(255, 255, 255, 0.051);
+        border-radius: 50%; }
+    .circle-inner-1 {
+      top: 33px;
+      left: 33px;
+      height: 470px;
+      width: 470px; }
+      .circle-inner-1 .circle-inner-top {
+        clip: rect(0, 185px, 470px, 0);
+        -webkit-transform: rotate(102deg);
+            -ms-transform: rotate(102deg);
+                transform: rotate(102deg); }
+      .circle-inner-1 .circle-inner-bottom {
+        clip: rect(0, 185px, 470px, 0);
+        -webkit-transform: rotate(-105deg);
+            -ms-transform: rotate(-105deg);
+                transform: rotate(-105deg); }
+    .circle-inner-2 {
+      top: 88px;
+      left: 88px;
+      height: 360px;
+      width: 360px; }
+      .circle-inner-2 .circle-inner-top {
+        clip: rect(0, 140px, 360px, 0);
+        -webkit-transform: rotate(75deg);
+            -ms-transform: rotate(75deg);
+                transform: rotate(75deg); }
+      .circle-inner-2 .circle-inner-bottom {
+        clip: rect(0, 140px, 360px, 0);
+        -webkit-transform: rotate(-76deg);
+            -ms-transform: rotate(-76deg);
+                transform: rotate(-76deg); }
 
 /**********************************************************************************/
 .welcome .photo {
@@ -914,9 +975,8 @@ form {
   width: 100%;
   padding: 60px 0 0 0;
   position: relative; }
-  .whychoose ol li .li-h,
-  .whychoose ol li .li-p {
-    font-family: "PT Sans";
+  .whychoose ol li .li-h {
+    font-family: "Comfortaa", cursive;
     font-size: 22px;
     font-weight: 700;
     color: #454545;
@@ -924,6 +984,7 @@ form {
   .whychoose ol li .li-p {
     padding: 6px 0 0 0;
     font-size: 15px;
+    font-weight: 600;
     color: #767676;
     line-height: 1.6; }
 
@@ -934,7 +995,7 @@ form {
   left: -80px;
   text-align: center;
   font-size: 24px;
-  font-family: "Comfortaa";
+  font-family: "Comfortaa", cursive;
   color: white;
   font-weight: bold;
   line-height: 2.5;
@@ -955,7 +1016,7 @@ form {
     top: 47%;
     left: 30%;
     font-size: 100px;
-    font-family: "Comfortaa";
+    font-family: "Comfortaa", cursive;
     color: white;
     font-weight: bold;
     line-height: 0.55;
@@ -978,7 +1039,7 @@ form {
     .events ul li .li-h,
     .events ul .e-next .li-h,
     .events ul .e-last .li-h {
-      font-family: "Comfortaa";
+      font-family: "Comfortaa", cursive;
       font-size: 20px;
       font-weight: 700;
       color: #454545;
@@ -1163,7 +1224,7 @@ form {
   padding-top: 65px;
   height: 100%; }
   .request .contact-us .h1 {
-    font-family: "Comfortaa";
+    font-family: "Comfortaa", cursive;
     font-size: 30px;
     color: white;
     line-height: 0.8;
@@ -1180,7 +1241,7 @@ form {
   .request .contact-us a {
     display: block;
     font-size: 18px;
-    font-family: "Comfortaa";
+    font-family: "Comfortaa", cursive;
     color: #e0e0e0;
     font-weight: bold;
     line-height: 1.333;
@@ -1223,12 +1284,12 @@ form {
       text-align: center;
       margin: 0 -4px 0 0;
       padding: 0;
-      width: 200px;
       height: 100px;
+      width: 200px;
       background-position: center center;
       background-repeat: no-repeat;
-      -webkit-animation: run 20s linear infinite;
-              animation: run 20s linear infinite; }
+      -webkit-animation: run 40s linear infinite;
+              animation: run 40s linear infinite; }
     .partners-content .partner-1 {
       background-image: url("/img/partner-1.png"); }
     .partners-content .partner-2 {
@@ -1244,13 +1305,13 @@ form {
   0% {
     left: 0; }
   100% {
-    left: -500px; } }
+    left: -1000px; } }
 
 @keyframes run {
   0% {
     left: 0; }
   100% {
-    left: -500px; } }
+    left: -1000px; } }
 
 /**********************************************************************************/
 /* Large desktops and laptops */
@@ -1315,9 +1376,11 @@ form {
     display: none;
     width: 0; }
   .home-slider .content {
-    padding-top: 29vh;
-    height: 100vh;
-    min-height: 100vh; }
+    height: calc(100vh - 80px);
+    min-height: 320px;
+    padding-bottom: 100px; }
+  .home-slider .content-on {
+    padding-top: 0; }
   .welcome .content-left,
   .whychoose .content-left,
   .events .content-left,
@@ -1427,7 +1490,7 @@ form {
   .keyfeatures .key-3 .h-key,
   .keyfeatures .key-4 .h-key {
     font-size: 1.75rem;
-    font-family: "Comfortaa";
+    font-family: "Comfortaa", cursive;
     color: #2f2f2f;
     line-height: 2.2;
     text-align: center;
@@ -1658,7 +1721,7 @@ form {
       color: #2f2f2f;
       line-height: 1.1;
       font-size: 1.5rem;
-      font-family: "Comfortaa";
+      font-family: "Comfortaa", cursive;
       text-align: left;
       padding: 5px 0 0 40px; }
     .features .key-1 p,
@@ -2061,14 +2124,14 @@ form {
     text-decoration: none; }
     .keycontacts .key .h-key {
       font-size: 1.5rem;
-      font-family: "Comfortaa";
+      font-family: "Comfortaa", cursive;
       color: #2b2b2b;
       line-height: 2.292;
       text-align: center;
       padding: 115px 0 0 0; }
     .keycontacts .key p {
       font-size: 0.9375rem;
-      font-family: "Comfortaa";
+      font-family: "Comfortaa", cursive;
       color: #bbbbbb;
       line-height: 1.333;
       text-align: center;
@@ -2102,7 +2165,7 @@ form {
     padding: 0; }
     .keycontacts .key .h-key {
       font-size: 1.5rem;
-      font-family: "Comfortaa";
+      font-family: "Comfortaa", cursive;
       color: #2b2b2b;
       line-height: 2.292;
       text-align: center;

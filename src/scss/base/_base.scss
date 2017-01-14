@@ -1,11 +1,7 @@
 // Base
-$base-font-family: 'Raleway',
-Helvetica,
-Arial,
-sans-serif !default;
-$second-font-family: 'Comfortaa' !default;
-//$third-font-family: 'Myriad Pro',
-$third-font-family: 'PT Sans' !default;
+$base-font-family: 'Raleway', Helvetica, Arial, sans-serif !default;
+$second-font-family: 'Comfortaa', cursive  !default;
+
 $screen-xs: 480px !default;
 $screen-xs-min: $screen-xs !default;
 $screen-phone: $screen-xs-min !default;
@@ -22,6 +18,7 @@ $screen-null-max: ($screen-xs-min - 1) !default;
 $screen-xs-max: ($screen-sm-min - 1) !default;
 $screen-sm-max: ($screen-md-min - 1) !default;
 $screen-md-max: ($screen-lg-min - 1) !default;
+
 * {
     &,
     &:before,
@@ -34,27 +31,18 @@ body {
     font-family: $base-font-family;
     font-size: rem(16);
     font-weight: 400;
-    line-height: 140%;
+    line-height: 1.5;
     background-color: #fff;
     color: #333;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $base-font-family;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h2-center, .h3, .h4, .h5, .h6 {
+    font-family: $second-font-family;
 }
 
 p {
-    padding: 18px 0 0 0;
-    font-family: $base-font-family;
-    font-size: 16px;
     font-weight: 600;
-    color: rgb(118, 118, 118);
-    line-height: 1.5;
+    color: #767676;
 }
 
 .hidden {
@@ -63,7 +51,6 @@ p {
 
 a {
     text-decoration: none;
-    //transition: color .3s ease;
     &:hover,
     &:focus {
         text-decoration: none;
