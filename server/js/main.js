@@ -139,9 +139,21 @@ $('.events ul').each(function() {
     });
 });
 
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+
+        navigation: true,
+        navigationPosition: 'right',
+        responsiveHeight: 900,
+
+    });
+});
+
+/*
 $(window).load(function() {
     $('.slider-info').liLanding({
         show: function(linkEl, landingItem) {},
         hide: function(linkEl, landingItem) {}
     });
 })
+*/

@@ -132,7 +132,7 @@
             }
             a {
                 display: inline-block;
-                font-weight: 600;
+                font-weight: 400;
                 color: #4c4c4c;
                 position: relative;
                 @media(max-width: 767px) {
@@ -151,6 +151,10 @@
                     }
                 }
                 &:hover,
+                &:focus {
+                    color: #ac252f;
+                }                
+                &:hover,
                 &:focus,
                 &.active {
                     &:before {
@@ -163,11 +167,10 @@
                 }
                 &.signup {
                     background-color: #ac252f;
-                    border-color: rgb(172, 37, 47);
-                    border-width: 2.07px;
-                    border-style: solid;
+                    border: 2px solid rgb(172, 37, 47);
                     border-radius: 23px;
                     padding: 10px 25px;
+                    font-weight: 600;
                     color: #fff;
                     white-space: nowrap;
                     transition: background .3s ease, color .3s ease;

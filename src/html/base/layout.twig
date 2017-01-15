@@ -33,6 +33,8 @@
 
 <body>
 
+{% block index_top %}{% endblock %}
+
 	<header class="header" role="banner">
 		<div class="container">
 			<div class="row">
@@ -55,10 +57,11 @@
 
 	</header>
 
-	<main class="main" role="main">
+{% block index_hidden_top %}<main class="main" role="main">{% endblock %}
 
 {% block main %}{% endblock %}
-	</main>
+
+{% block index_hidden_bottom %}</main>{% endblock %}
 
 	<footer class="footer" role="contentinfo">
 	<div class="footer-container">
@@ -79,10 +82,12 @@
 		</div>
 	</footer>
 
+{% block index_bottom %}{% endblock %}
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="{{linkPath}}js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-	<script src="{{linkPath}}js/liLanding.js"></script>
+	<script src="{{linkPath}}js/jquery.fullpage.min.js"></script>
 	<script src="{{linkPath}}js/main.js"></script>
 
 {% block modal %}{% endblock %}

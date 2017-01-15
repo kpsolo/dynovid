@@ -8,8 +8,7 @@
                     position: relative;
                     left: 0;
                     top: calc(50% - 280px);
-                    width: 500px;
-                    height: 500px;
+                    @include size(500px);
                     padding: 0;
                     background-image: url($imgPathCss+'/foradvertisers.jpg');
                     background-position-x: calc(50% - 120px);
@@ -33,10 +32,8 @@
                 position: relative;
                 display: inline-block;
                 height: 431px;
-                //padding: 0 25px;
-                //min-width: 380px;
                 background-position: center 70px;
-                background-size: auto 56px;
+                background-size: 56px auto;
                 background-repeat: no-repeat;
                 text-align: center;
                 text-decoration: none;
@@ -74,18 +71,15 @@
                         padding: 150px 0 0 0;
                     }
                     p {
-                        //line-height: 1.5;
                         padding: 0 7%;
                     }
                 }
                 @media(max-width: 1400px) {
                     background-position: center 50px;
                     .h-key {
-                        //line-height: 1.5;
                         padding: 130px 0 0 0;
                     }
                     p {
-                        //line-height: 1.5;
                         padding: 0 0px;
                     }
                 }
@@ -101,12 +95,10 @@
                 }
             }
             .key-1 {
-                // background-image: url($imgPathCss+'/key-feature-1.svg');
                 background-image: url($imgPathCss+'/key-feature-1.png');
                 background-color: rgb(250, 249, 245);
             }
             .key-2 {
-                // background-image: url($imgPathCss+'/key-feature-2.svg');
                 background-image: url($imgPathCss+'/key-feature-2.png');
                 background-color: rgb(242, 240, 233);
             }
@@ -117,7 +109,6 @@
                 p {
                     color: rgb(242, 240, 233);
                 }
-                // background-image: url($imgPathCss+'/key-feature-3.svg');
                 background-image: url($imgPathCss+'/key-feature-3.png');
                 background-color: rgb(63, 63, 69);
             }
@@ -128,7 +119,6 @@
                 p {
                     color: rgb(242, 240, 233);
                 }
-                // background-image: url($imgPathCss+'/key-feature-1.svg');
                 background-image: url($imgPathCss+'/key-feature-1.png');
                 background-color: rgb(45, 44, 54);
             }

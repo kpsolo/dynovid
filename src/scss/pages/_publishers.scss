@@ -120,6 +120,14 @@
     }
     .button-center {
         padding: 0;
+        a {
+            transition: background .3s ease, border .3s ease;
+            &:hover, &:focus {
+                background-color: darken(#ac252f, 10%);
+                border-color: darken(#ac252f, 10%);
+                color:#fff;
+            }
+        }
     }
 }
 

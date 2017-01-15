@@ -29,9 +29,10 @@
     }
     a {
         color: #fff;
+        transition: color .3s ease;
         &:hover,
         &:focus {
-            color: #fff;
+            color: #ac252f;
         }
     }
     &__socil__link {
@@ -60,7 +61,7 @@
                 transition: background .3s ease;
                 &:hover,
                 &:focus {
-                    background-color: #c4aea4;
+                    background-color: rgba(#cdab87, .5);
                 }
                 @include p_el(before, null, null) {
                     @include position(absolute, 0);
