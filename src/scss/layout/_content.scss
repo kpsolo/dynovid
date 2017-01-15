@@ -96,8 +96,9 @@
 .current-link,
 .buildsuccess {
     position: relative;
-    padding: 0;
-    height: 380px !important;
+    padding: 0 !important;
+    //    height: 380px !important;
+    height: calc(100vh/3) !important;
     background-image: url($imgPathCss+'/dynovid-main.jpg');
     background-position: center top;
     background-repeat: no-repeat;
@@ -111,7 +112,7 @@
     }
     .content {
         vertical-align: middle;
-        padding: 150px 0;
+        padding: 10px 0;
     }
 }
 
@@ -268,6 +269,7 @@ form {
         display: table-cell;
         float: none;
         height: 100%;
+        width: 100%;
         padding: 0;
     }
     .col-sm-top {

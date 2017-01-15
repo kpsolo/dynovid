@@ -625,8 +625,8 @@ a {
 .current-link,
 .buildsuccess {
   position: relative;
-  padding: 0;
-  height: 380px !important;
+  padding: 0 !important;
+  height: calc(100vh/3) !important;
   background-image: url("/img/dynovid-main.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -645,7 +645,7 @@ a {
   .current-link .content,
   .buildsuccess .content {
     vertical-align: middle;
-    padding: 150px 0; }
+    padding: 10px 0; }
 
 .button,
 .button-center {
@@ -786,6 +786,7 @@ form {
     display: table-cell;
     float: none;
     height: 100%;
+    width: 100%;
     padding: 0; }
   .col-sm-top {
     vertical-align: top; }
@@ -2329,6 +2330,17 @@ form {
 /**********************************************************************************/
 .keycontacts {
   padding: 60px 0; }
+  .keycontacts .row-sm-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%; }
+  .keycontacts .col-sm-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+    width: 100%;
+    padding: 0; }
   .keycontacts .key {
     position: relative;
     display: inline-block;
@@ -2387,6 +2399,11 @@ form {
       text-align: center;
       padding: 115px 0 0 0; }
     .keycontacts .key p {
-      padding: 0 5px; } }
+      padding: 0 5px; }
+  .row-sm-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%; } }
 
 /* Portrait phones and smaller */

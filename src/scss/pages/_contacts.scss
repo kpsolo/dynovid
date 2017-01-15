@@ -1,6 +1,19 @@
 /**********************************************************************************/
 
 .keycontacts {
+    .row-sm-height {
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+    }
+    .col-sm-height {
+        display: table-cell;
+        float: none;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
     padding: 60px 0;
     .key {
         position: relative;
@@ -95,6 +108,12 @@
                 padding: 0 5px;
             }
         }
+    }
+    .row-sm-height {
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
     }
 }
 
