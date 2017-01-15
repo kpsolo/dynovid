@@ -144,7 +144,8 @@ $(document).ready(function() {
 
         navigation: true,
         navigationPosition: 'right',
-        responsiveHeight: 900,
+        responsiveWidth: 992,
+        responsiveHeight: 767,
 
     });
 });

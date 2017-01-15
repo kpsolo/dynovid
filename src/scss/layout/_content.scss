@@ -29,8 +29,9 @@
     @media(max-width: 1446px) {
         padding-right: 0;
     }
-    @media(max-width: $screen-sm-max) {
+    @media(max-width: $screen-md-max) {
         font-size: rem(38);
+        line-height: 130%;
     }
     margin: 0;
     color: rgb(47, 47, 47);
@@ -163,7 +164,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 930px;
+    height: 100%;
     overflow: hidden;
     @media(max-width: $screen-xs-max) {
         display: none !important;
@@ -233,6 +234,9 @@ form {
 
 .row-pad {
     padding: 0 74px;
+    @media(max-width: 1200px) {
+        padding: 0 40px;
+    }
     @media(max-width: $screen-md) {
         padding: 0;
     }
@@ -445,5 +449,12 @@ form {
             font-size: 16px;
             color: #6c6c6c;
         }
+    }
+}
+
+
+@media(max-width: 767px) {
+    .fp-section, .fp-tableCell {
+        height: auto !important;
     }
 }

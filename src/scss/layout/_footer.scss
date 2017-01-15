@@ -2,6 +2,9 @@
 .footer {
     padding: 0 74px;
     color: #a1a1a1;
+    @media(max-width: 1200px) {
+        padding: 0 40px;
+    }
     @media(max-width: $screen-md) {
         padding: 0;
     }
