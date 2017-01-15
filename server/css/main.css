@@ -1620,21 +1620,24 @@ form {
 
 /* Portrait phones and smaller */
 /**********************************************************************************/
-.foradvertisers .photo-circle,
-.forpublishers .photo-circle {
-  overflow: hidden;
-  position: relative;
-  left: 0;
-  top: calc(50% - 280px);
-  height: 500px;
-  width: 500px;
-  padding: 0;
-  background-image: url("/img/foradvertisers.jpg");
-  background-position-x: calc(50% - 120px);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-style: none;
-  border-radius: 50%; }
+.foradvertisers .photo,
+.forpublishers .photo {
+  height: 750px; }
+  .foradvertisers .photo-circle,
+  .forpublishers .photo-circle {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: calc(50% - 280px);
+    height: 500px;
+    width: 500px;
+    padding: 0;
+    background-image: url("/img/foradvertisers.jpg");
+    background-position-x: calc(50% - 120px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+    border-radius: 50%; }
 
 .foradvertisers .content,
 .forpublishers .content {
@@ -1856,7 +1859,8 @@ form {
     background-position-x: calc(50% + 110px); }
 
 .forpublishers .content {
-  padding: 0 31% 0 60px; }
+  padding: 0 0 0 60px;
+  max-width: 580px; }
 
 /**********************************************************************************/
 .features {
