@@ -549,6 +549,13 @@ a {
   .buildsuccess .content {
     vertical-align: middle;
     padding: 10px 0; }
+  .current-link .col-sm-height,
+  .buildsuccess .col-sm-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+    width: 100%;
+    padding: 0; }
 
 .button,
 .button-center {
@@ -692,7 +699,6 @@ form {
     display: table-cell;
     float: none;
     height: 100%;
-    width: 100%;
     padding: 0; }
   .col-sm-top {
     vertical-align: top; }
@@ -855,7 +861,8 @@ form {
     color: #6c6c6c; }
 
 @media (max-width: 767px) {
-  .fp-section, .fp-tableCell {
+  .fp-section,
+  .fp-tableCell {
     height: auto !important; } }
 
 #fp-nav {

@@ -115,6 +115,13 @@
         vertical-align: middle;
         padding: 10px 0;
     }
+    .col-sm-height {
+        display: table-cell;
+        float: none;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .button,
@@ -273,7 +280,7 @@ form {
         display: table-cell;
         float: none;
         height: 100%;
-        width: 100%;
+        //width: 100%;
         padding: 0;
     }
     .col-sm-top {
@@ -454,9 +461,9 @@ form {
     }
 }
 
-
 @media(max-width: 767px) {
-    .fp-section, .fp-tableCell {
+    .fp-section,
+    .fp-tableCell {
         height: auto !important;
     }
 }
