@@ -118,7 +118,7 @@
                     height: 39px;
                     background-position: center top;
                     background-repeat: no-repeat;
-                    background-size: contain;
+                    background-size: cover;
                     overflow: hidden;
                     text-align: center;
                 }
@@ -259,7 +259,6 @@
                 .card {
                     padding: 5% 25px 5% 40px;
                     flex-direction: row;
-                    //align-items: 
                     max-width: 100%;
                     .pic {
                         margin: 0px 25px 25px 0;

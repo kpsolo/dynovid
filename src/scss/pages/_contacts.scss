@@ -98,13 +98,15 @@
     .keycontacts {
         padding: 0;
         .key {
+            height: auto;
+            background-position: center 35px;
             .h-key {
                 font-size: rem(24);
                 font-family: $second-font-family;
                 color: rgb(43, 43, 43);
                 line-height: 2.292;
                 text-align: center;
-                padding: 115px 0 0 0;
+                padding: 75px 0 0 0;
             }
             p {
                 padding: 0 5px;
@@ -113,7 +115,6 @@
     }
     .row-sm-height {
         display: table;
-        table-layout: fixed;
         height: 100%;
         width: 100%;
     }
