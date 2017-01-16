@@ -178,7 +178,9 @@
     
     ///////////////////////////////////////////////////////////////////////////
     .sendmessage {
+        padding: 0 !important;
         .content-right {
+                    padding: 40px 25px 40px 25px;
             .h2-center {
                 padding: 7px 0 27px 0;
                 text-align: center;
@@ -209,7 +211,7 @@
         }
         .technology {
             .content {
-                padding: 25px;
+                padding: 0 15px 0 15px;
                 .h1,
                 p {
                     text-align: center
@@ -252,6 +254,7 @@
         }
         .ourservices {
             .content {
+                margin: 0 -15px 0 -15px;
                 flex-direction: column;
                 .card {
                     padding: 5% 25px 5% 40px;

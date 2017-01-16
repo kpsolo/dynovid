@@ -2227,14 +2227,17 @@ form {
       .ourservices .content .card .text p {
         text-align: center; } }
 
-.sendmessage .content-right .h2-center {
-  padding: 7px 0 27px 0;
-  text-align: center; }
-
-.sendmessage .photo {
-  height: 700px;
-  background-image: url("/img/request-2.jpg");
-  background-position-x: calc(50% - 80px); }
+.sendmessage {
+  padding: 0 !important; }
+  .sendmessage .content-right {
+    padding: 40px 25px 40px 25px; }
+    .sendmessage .content-right .h2-center {
+      padding: 7px 0 27px 0;
+      text-align: center; }
+  .sendmessage .photo {
+    height: 700px;
+    background-image: url("/img/request-2.jpg");
+    background-position-x: calc(50% - 80px); }
 
 /**********************************************************************************/
 /**********************************************************************************/
@@ -2246,7 +2249,7 @@ form {
   .col-top {
     vertical-align: middle; }
   .technology .content {
-    padding: 25px; }
+    padding: 0 15px 0 15px; }
     .technology .content .h1,
     .technology .content p {
       text-align: center; }
@@ -2278,6 +2281,7 @@ form {
 
 @media (max-width: 767px) {
   .ourservices .content {
+    margin: 0 -15px 0 -15px;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
