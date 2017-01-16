@@ -18,7 +18,7 @@
 .h2-center {
     font-size: rem(54);
     font-weight: 500;
-    line-height: 1;
+    line-height: 110%;
     padding: 7px 25% 27px 0;
     @media(max-width: 1734px) {
         padding-right: 20%;
@@ -199,8 +199,8 @@ form {
         margin-top: 5px;
         font-family: $second-font-family;
         font-size: rem(15);
-        color: rgb(109, 109, 109);
-        font-weight: 300;
+        color: #555;
+        font-weight: 400;
         text-align: left;
         transition: border-color .3s ease;
         &:hover,

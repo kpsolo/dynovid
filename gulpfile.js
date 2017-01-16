@@ -26,7 +26,8 @@ gulp.task('css', function () {
 
 gulp.task('css__static', function () {
     var variables = {
-        PathCss: "../"
+        PathCss: "../",
+        imgPathCss: "../img"
     }
     return gulp.src('src/scss/main.scss')
     .pipe(sassVars(variables, { verbose: true }))
