@@ -126,10 +126,10 @@
 .button,
 .button-center {
     width: 100%;
-    padding: 50px 0;
+    padding: 0 0 40px 0;
     text-align: left;
     @media(max-width: $screen-sm-max) {
-        padding: 5vh 0;
+        padding: 0 0 40px 0;
     }
     input[type="submit"],
     a {
@@ -295,7 +295,7 @@ form {
 
 @media (max-width: $screen-xs-max) {
     .row-sm-height {
-        padding: 25px 0px;
+        padding: 40px 0 0 0;
     }
 }
 

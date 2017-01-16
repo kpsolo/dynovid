@@ -12,7 +12,7 @@
     }
     .content {
         padding: 0 0 0 60px;
-        max-width: 600px;
+        max-width: 580px;
     }
 }
 
@@ -24,14 +24,24 @@
     .key-1,
     .key-2 {
         height: 388px;
+        width: 33.33%;
         text-align: center;
         text-decoration: none;
-        .content {}
+        .content {
+            padding: 50px;
+            .row{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
         .h2 {
+            display: inline-flex;
             font-size: rem(60);
             color: rgb(196, 174, 164);
-            min-width: 95px;
-            padding: 0 !important;
+            width: auto;
+            padding: 0 80px 0 0;
             &:before {
                 position: absolute;
                 content: ' ';
@@ -42,8 +52,10 @@
                 height: 4px;
             }
             @media (min-width: $screen-sm) and (max-width: 1370px) {
-                margin-bottom: 20px;
+                padding: 0 0px 0px 0px;
+                top: -10px;
                 text-align: center;
+                min-width:auto;
                 &:before {
                     display: none;
                 }
@@ -59,15 +71,16 @@
             }
         }
         .h1-key {
+            display: inline-flex;
             color: rgb(47, 47, 47);
-            line-height: 1.1;
+            line-height: 1.2;
             font-size: rem(24);
             font-family: $second-font-family;
             text-align: left;
-            padding: 5px 0 0 40px;
+            padding: 0px 0 0 15px;
         }
         p {
-            color: #555;
+            color: rgb(118, 118, 118);
             line-height: 1.5;
             font-size: rem(16);
             font-family: $base-font-family;
@@ -134,22 +147,12 @@
 
 
 /**********************************************************************************/
-
-
-/**********************************************************************************/
-
-
-/**********************************************************************************/
-
-
-/**********************************************************************************/
-
-
 /* Large desktops and laptops */
 
 @media (min-width: $screen-lg-min) {}
 
 
+/**********************************************************************************/
 /* Landscape tablets and medium desktops */
 
 @media (min-width: $screen-md) and (max-width: $screen-md-max) {
@@ -168,6 +171,9 @@
 }
 
 
+
+
+/**********************************************************************************/
 /* Portrait tablets and small desktops */
 
 @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
@@ -183,20 +189,24 @@
             padding: 0 20px 0 20px;
         }
     }
-    .keyfeatures {
-        .key-1,
-        .key-2,
-        .key-3,
-        .key-4 {
-            background-position: center 80px;
-            .h-key {
-                padding: 160px 0 0 0;
-            }
+    .features{
+        .col-middle{
+            vertical-align: top;
         }
     }
+    .buildsuccess {
+        height: auto !important;
+        background-image: url($imgPathCss+'/buildsuccess.jpg');
+        background-position-y: 65%;
+        .content {
+            vertical-align: middle;
+            padding: 40px 0;
+        }
+    }    
 }
 
 
+/**********************************************************************************/
 /* Landscape phones and portrait tablets */
 
 @media (max-width: $screen-xs-max) {
@@ -210,6 +220,7 @@
         }
         .content {
             padding: 0 15px 0 15px;
+            max-width: 100%;
         }
         .h1 {
             text-align: center;
@@ -232,15 +243,28 @@
         .key-1,
         .key-2 {
             height: auto;
+            width: 100%;
             background-position: center 80px;
-            .h-key {
-                padding: 160px 0 0 0;
-            }
             .content {
-                padding: 25px;
+                padding: 30px 40px 20px 40px;
             }
+            p {
+                padding: 0 0 15px 0;
+                margin: 0;
+            }
+
         }
     }
+
+    .buildsuccess {
+        height: auto !important;
+        background-image: url($imgPathCss+'/buildsuccess.jpg');
+        background-position-y: 65%;
+        .content {
+            vertical-align: middle;
+            padding: 40px 0;
+        }
+    }    
 }
 
 
@@ -250,9 +274,13 @@
     .features {
         .key-1,
         .key-2 {
+            p {
+                padding: 15px;
+            }
+
             .h2 {
-                margin-bottom: 20px;
-                text-align: center;
+                padding: 0;
+                top: -10px;
                 &:before {
                     display: none;
                 }
@@ -265,7 +293,7 @@
                     width: 42px;
                     height: 4px;
                 }
-            }
+            }        
         }
     }
 }
