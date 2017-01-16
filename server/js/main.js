@@ -149,13 +149,6 @@ $(document).ready(function() {
 
     });
 
-    var h = $('#home .fp-tableCell').height() - 4;
-    $('#home .fp-tableCell').css('min-height', h);
-
-    $(window).resize(function(){
-        var h = $('#home .fp-tableCell').height() - 4;
-        $('#home .fp-tableCell').css('min-height', h);
-    });
 });
 
 /*

@@ -582,6 +582,14 @@
             }
         }
     }
+    @media(max-width:479px) {
+        .content-right {
+            padding:0;
+            .button {
+                padding-bottom: 40px;
+            }
+        }
+    }
 }
 
 

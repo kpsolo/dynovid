@@ -477,8 +477,8 @@ form {
         .row-pad, .col-sm-height, .content {
             height: 100%;
         }
-        .col-sm-height {
-            display: table-cell;
+        .row-sm-height, .col-sm-height {
+            display: block;
         }
     }
 }
