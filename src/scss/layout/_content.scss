@@ -99,6 +99,7 @@
     position: relative;
     padding: 0 !important;
     //    height: 380px !important;
+    min-height: 220px;
     height: calc(100vh/3) !important;
     background-image: url($imgPathCss+'/dynovid-main.jpg');
     background-position: center top;
