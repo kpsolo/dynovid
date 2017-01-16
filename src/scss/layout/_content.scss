@@ -461,22 +461,24 @@ form {
     }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 992px), (max-height: 800px) {
     .fp-section:not(#home) {
         &, & .fp-tableCell {
             height: auto !important;
         }
     }
     #home {
+        height: 100vh;
         &, & .fp-tableCell {
             width: 100%;
         }
         .container-fluid {
-            height: calc(100% - 80px);
+            height: calc(100% - 83px);
         }
         .row-pad, .col-sm-height, .content {
             height: 100%;
         }
+
         .row-sm-height, .col-sm-height {
             display: block;
         }

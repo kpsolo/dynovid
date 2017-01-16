@@ -145,7 +145,7 @@ $(document).ready(function() {
         navigation: true,
         navigationPosition: 'right',
         responsiveWidth: 992,
-        responsiveHeight: 767,
+        responsiveHeight: 801,
 
     });
 

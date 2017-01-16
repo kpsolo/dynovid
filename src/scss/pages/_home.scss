@@ -180,6 +180,9 @@
     .photo {
         background-image: url($imgPathCss+'/welcome.jpg');
     }
+    @media(max-width: 992px), (max-height: 800px) {
+        height: 740px;
+    }
     @media(max-width: 767px) {
         height: auto;
         padding: 40px 0 0;
@@ -194,6 +197,9 @@
 
 .whychoose {
     height: 100vh;
+    @media(max-width: 992px), (max-height: 800px) {
+        height: 740px;
+    }
     @media(max-width: 767px) {
         height: auto;
         padding: 40px 0 0;
@@ -255,6 +261,9 @@
 
 .events {
     height: 100vh;
+    @media(max-width: 992px), (max-height: 800px) {
+        height: 740px;
+    }
     @media(max-width: 767px) {
         height: auto;
         margin-top:20px;
@@ -477,6 +486,9 @@
         padding: 0;
         @media(max-width: 767px) {
             height: auto;
+        }
+        @media(max-width: 992px), (max-height: 800px) {
+            height: 560px;
         }
     }
     .content-right {

@@ -369,11 +369,12 @@ a {
     color: #a1a1a1; }
   .footer a {
     color: #fff;
-    transition: color .3s ease;
-    white-space: nowrap; }
+    transition: opacity .3s ease, border .3s ease;
+    white-space: nowrap;
+    border-bottom: 1px solid transparent; }
     .footer a:hover, .footer a:focus {
       opacity: .8;
-      text-decoration: underline; }
+      border-color: #fff; }
   .footer__socil__link {
     list-style: none;
     margin: 0;
@@ -863,17 +864,19 @@ form {
     font-size: 16px;
     color: #6c6c6c; }
 
-@media (max-width: 767px) {
+@media (max-width: 992px), (max-height: 800px) {
   .fp-section:not(#home), .fp-section:not(#home) .fp-tableCell {
     height: auto !important; }
-  #home, #home .fp-tableCell {
-    width: 100%; }
-  #home .container-fluid {
-    height: calc(100% - 80px); }
-  #home .row-pad, #home .col-sm-height, #home .content {
-    height: 100%; }
-  #home .row-sm-height, #home .col-sm-height {
-    display: block; } }
+  #home {
+    height: 100vh; }
+    #home, #home .fp-tableCell {
+      width: 100%; }
+    #home .container-fluid {
+      height: calc(100% - 83px); }
+    #home .row-pad, #home .col-sm-height, #home .content {
+      height: 100%; }
+    #home .row-sm-height, #home .col-sm-height {
+      display: block; } }
 
 @media (max-height: 479px) {
   #home, #home .fp-tableCell {
@@ -1101,6 +1104,9 @@ form {
   height: 100vh; }
   .welcome .photo {
     background-image: url("/img/welcome.jpg"); }
+  @media (max-width: 992px), (max-height: 800px) {
+    .welcome {
+      height: 740px; } }
   @media (max-width: 767px) {
     .welcome {
       height: auto;
@@ -1111,6 +1117,9 @@ form {
 /**********************************************************************************/
 .whychoose {
   height: 100vh; }
+  @media (max-width: 992px), (max-height: 800px) {
+    .whychoose {
+      height: 740px; } }
   @media (max-width: 767px) {
     .whychoose {
       height: auto;
@@ -1162,6 +1171,9 @@ form {
 /**********************************************************************************/
 .events {
   height: 100vh; }
+  @media (max-width: 992px), (max-height: 800px) {
+    .events {
+      height: 740px; } }
   @media (max-width: 767px) {
     .events {
       height: auto;
@@ -1365,6 +1377,9 @@ form {
   @media (max-width: 767px) {
     .request .content-left {
       height: auto; } }
+  @media (max-width: 992px), (max-height: 800px) {
+    .request .content-left {
+      height: 560px; } }
 
 .request .content-right .col-lg-4,
 .request .content-right .col-lg-8 {
@@ -2167,6 +2182,9 @@ form {
 .ourservices .photo {
   height: 700px;
   background-image: url("/img/ourservices.jpg"); }
+  @media (max-width: 992px) {
+    .ourservices .photo {
+      height: 100%; } }
 
 .ourservices .content {
   height: 100%;
@@ -2175,16 +2193,17 @@ form {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-content: stretch;
-      -ms-flex-line-pack: stretch;
-          align-content: stretch;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   background-color: #faf9f5; }
   .ourservices .content .card {
     margin: 0;
-    padding: 12% 25px 0px 40px;
+    padding: 0 25px 0 40px;
+    height: 35%;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -2204,7 +2223,7 @@ form {
       height: 39px;
       background-position: center top;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       overflow: hidden;
       text-align: center; }
     .ourservices .content .card .pic-1 {
@@ -2217,7 +2236,7 @@ form {
       background-image: url("/img/vmap.png"); }
     .ourservices .content .card .text {
       display: inline-block;
-      width: 80%; }
+      width: calc(100% - 65px); }
       .ourservices .content .card .text .h1-inf {
         display: inline-block;
         text-align: left; }
@@ -2228,25 +2247,42 @@ form {
         color: #767676;
         line-height: 1.571; }
 
-@media (min-width: 767px) and (max-width: 1680px) {
-  .ourservices .content .card {
-    padding: 12% 15px 0px 15px;
+@media (min-width: 993px) and (max-width: 1680px) {
+  .ourservices .content {
+    -webkit-align-content: space-around;
+        -ms-flex-line-pack: distribute;
+            align-content: space-around; }
+    .ourservices .content .card {
+      padding: 0 15px;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      max-width: 50%; }
+      .ourservices .content .card .pic {
+        margin: 0px 0px 25px 0; }
+      .ourservices .content .card .text {
+        width: 100%; }
+        .ourservices .content .card .text .h1-inf {
+          display: block;
+          text-align: center; }
+        .ourservices .content .card .text p {
+          text-align: center; } }
+
+@media (max-width: 992px) {
+  .ourservices .content {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-width: 50%; }
-    .ourservices .content .card .pic {
-      margin: 0px 0px 25px 0; }
-    .ourservices .content .card .text {
-      width: 100%; }
-      .ourservices .content .card .text .h1-inf {
-        display: block;
-        text-align: center; }
-      .ourservices .content .card .text p {
-        text-align: center; } }
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center; }
+    .ourservices .content .card {
+      padding: 35px;
+      max-width: 100%;
+      height: auto; } }
 
 .sendmessage {
   padding: 0 !important; }
@@ -2259,63 +2295,66 @@ form {
     height: 700px;
     background-image: url("/img/request-2.jpg");
     background-position-x: calc(50% - 80px); }
+  @media (max-width: 767px) {
+    .sendmessage form .button {
+      padding-top: 15px; } }
 
 /**********************************************************************************/
 /**********************************************************************************/
 /* Large desktops and laptops */
 /* Landscape tablets and medium desktops */
 /* Portrait tablets and small desktops */
-/* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .col-top {
     vertical-align: middle; }
-  .technology .content {
-    padding: 0 15px 0 15px; }
-    .technology .content .h1,
-    .technology .content p {
-      text-align: center; }
-    .technology .content .h2 {
-      text-align: center;
-      padding-right: 0px; }
-      .technology .content .h2:before {
-        left: calc(50% - 21px); }
-    .technology .content .button {
-      text-align: center; }
-  .technology .content-right {
-    padding: 35px; }
-    .technology .content-right .h1,
-    .technology .content-right p {
-      text-align: center; } }
-  @media (max-width: 767px) and (max-width: 550px) {
-    .technology .content-right .row {
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .technology .content-right .row .text {
-        margin-right: 0; }
-      .technology .content-right .row .h1-inf {
+  .technology {
+    padding: 40px 0 0; }
+    .technology .content {
+      padding: 0 15px 0 15px; }
+      .technology .content .h1,
+      .technology .content p {
         text-align: center; }
-      .technology .content-right .row p {
+      .technology .content .h2 {
+        text-align: center;
+        padding-right: 0px; }
+        .technology .content .h2:before {
+          left: calc(50% - 21px); }
+      .technology .content .button {
         text-align: center; }
-      .technology .content-right .row .price {
-        margin-left: 0; } }
+    .technology .content-right {
+      padding: 35px 35px 15px;
+      border-top: 1px solid #ddd; }
+      .technology .content-right .h1,
+      .technology .content-right p {
+        text-align: center; } }
+    @media (max-width: 767px) and (max-width: 550px) {
+      .technology .content-right .row {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .technology .content-right .row .text {
+          margin-right: 0; }
+        .technology .content-right .row .h1-inf {
+          text-align: center; }
+        .technology .content-right .row p {
+          text-align: center; }
+        .technology .content-right .row .price {
+          margin-left: 0; } }
 
 @media (max-width: 767px) {
-  .ourservices .content {
-    margin: 0 -15px 0 -15px;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .ourservices .content .card {
-      padding: 5% 25px 5% 40px;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      max-width: 100%; }
-      .ourservices .content .card .pic {
-        margin: 0px 25px 25px 0; }
-      .ourservices .content .card .text {
-        width: 80%; }
+  .ourservices {
+    padding: 0; }
+    .ourservices .content {
+      margin: 0 -15px 0 -15px;
+      padding: 40px 0; }
+      .ourservices .content .card {
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        padding: 15px 35px;
+        max-width: 100%; }
+        .ourservices .content .card .pic {
+          margin: 0px 25px 25px 0; }
         .ourservices .content .card .text .h1-inf {
           display: block;
           text-align: left; }
@@ -2325,7 +2364,7 @@ form {
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   .ourservices .content .card {
-    padding: 10% 15px 10% 15px;
+    padding: 15px 35px;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
@@ -2334,7 +2373,7 @@ form {
             align-items: center;
     max-width: 100%; }
     .ourservices .content .card .pic {
-      margin: 0px 0px 25px 0; }
+      margin: 0 0 15px; }
     .ourservices .content .card .text {
       width: 100%; }
       .ourservices .content .card .text .h1-inf {

@@ -33,12 +33,13 @@
     }
     a {
         color: #fff;
-        transition: color .3s ease;
+        transition: opacity .3s ease, border .3s ease;
         white-space: nowrap;
+        border-bottom: 1px solid transparent;
         &:hover,
         &:focus {
             opacity: .8;
-            text-decoration: underline;
+            border-color: #fff;
         }
     }
     &__socil__link {
