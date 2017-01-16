@@ -867,7 +867,7 @@ form {
   .fp-section:not(#home), .fp-section:not(#home) .fp-tableCell {
     height: auto !important; }
   #home, #home .fp-tableCell {
-    min-height: 320px; }
+    width: 100%; }
   #home .container-fluid {
     height: calc(100% - 80px); }
   #home .row-pad, #home .col-sm-height, #home .content {
