@@ -29,13 +29,16 @@
         margin: 0;
         padding: 0;
         line-height: 38px;
+        color: #a1a1a1;
     }
     a {
         color: #fff;
         transition: color .3s ease;
+        white-space: nowrap;
         &:hover,
         &:focus {
-            color: #ac252f;
+            opacity: .8;
+            text-decoration: underline;
         }
     }
     &__socil__link {
