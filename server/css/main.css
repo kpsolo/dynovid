@@ -296,7 +296,7 @@ a {
         .nav__list li a {
           display: block;
           width: 100%;
-          padding: 10px;
+          padding: 12px 10px;
           text-align: center; } }
       .nav__list li a:before {
         content: '';
