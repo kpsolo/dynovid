@@ -99,7 +99,7 @@
   height: auto !important; }
 .footer__socil__link__twitter:before, .footer__socil__link__facebook:before, .footer__socil__link__instagram:before {
   display: inline-block;
-  background-image: url("../img/sprite.svg");
+  background-image: url("/img/sprite.svg");
   background-size: 30.875em 29.3125em; }
 
 *, *:before, *:after {
@@ -533,7 +533,7 @@ a {
   position: relative;
   padding: 0 !important;
   height: calc(100vh/3) !important;
-  background-image: url("../img/dynovid-main.jpg");
+  background-image: url("/img/dynovid-main.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -789,14 +789,14 @@ form {
 .close {
   width: 14px;
   height: 14px;
-  background-image: url("../img/close.svg");
+  background-image: url("/img/close.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #aaa;
   float: right; }
   .close:hover {
-    background-image: url("../img/close-hover.svg"); }
+    background-image: url("/img/close-hover.svg"); }
 
 .close:hover,
 .close:focus {
@@ -847,7 +847,7 @@ form {
   height: 60px;
   width: 80px;
   margin: 10px auto 20px;
-  background: url("../img/thankyou.svg") center center no-repeat; }
+  background: url("/img/thankyou.svg") center center no-repeat; }
 
 .thankyou__title {
   color: #00377d;
@@ -959,7 +959,7 @@ form {
           align-items: center;
   position: relative;
   overflow: hidden;
-  background: url("../img/dynovid-main.jpg") no-repeat;
+  background: url("/img/dynovid-main.jpg") no-repeat;
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -1087,7 +1087,7 @@ form {
 .welcome {
   height: 100vh; }
   .welcome .photo {
-    background-image: url("../img/welcome.jpg"); }
+    background-image: url("/img/welcome.jpg"); }
   @media (max-width: 767px) {
     .welcome {
       height: auto;
@@ -1104,7 +1104,7 @@ form {
       padding: 40px 0 0;
       border-top: 1px solid #ddd; } }
   .whychoose .photo {
-    background-image: url("../img/whychoose.jpg"); }
+    background-image: url("/img/whychoose.jpg"); }
   .whychoose ol {
     margin: 0 0 0 -10px;
     padding: 0 0 15px 80px;
@@ -1157,7 +1157,7 @@ form {
       border-top: 1px solid #ddd; } }
   .events .photo,
   .events .no-text {
-    background-image: url("../img/events.jpg");
+    background-image: url("/img/events.jpg");
     height: 100%; }
     .events .photo:before,
     .events .no-text:before {
@@ -1347,7 +1347,7 @@ form {
   display: table;
   float: none;
   width: 100%;
-  height: calc(100vh - 245px);
+  height: calc(100vh - 275px);
   padding: 0; }
   @media (max-width: 767px) {
     .request .content-left {
@@ -1360,7 +1360,7 @@ form {
 .request .content-right form {
   padding-top: 40px; }
   .request .content-right form .button {
-    padding-bottom: 40px; }
+    padding-top: 20px; }
 
 .request .left,
 .request .right {
@@ -1374,7 +1374,7 @@ form {
 .request .right {
   min-width: 0; }
   .request .right .photo {
-    background-image: url("../img/request-l.jpg"); }
+    background-image: url("/img/request-l.jpg"); }
 
 .request .left-top,
 .request .left-bt {
@@ -1383,13 +1383,13 @@ form {
   padding: 0;
   width: 100%;
   height: 50%;
-  background-image: url("../img/request-rt.jpg"); }
+  background-image: url("/img/request-rt.jpg"); }
 
 .request .left-bt {
-  background-image: url("../img/request-rb.jpg"); }
+  background-image: url("/img/request-rb.jpg"); }
 
 .request .contact-us {
-  background-image: url("../img/phone.png");
+  background-image: url("/img/phone.png");
   background-position: center 65px;
   background-repeat: no-repeat;
   padding-top: 65px;
@@ -1476,15 +1476,15 @@ form {
       -webkit-animation: run 40s linear infinite;
               animation: run 40s linear infinite; }
     .partners-content .partner-1 {
-      background-image: url("../img/partner-1.png"); }
+      background-image: url("/img/partner-1.png"); }
     .partners-content .partner-2 {
-      background-image: url("../img/partner-2.png"); }
+      background-image: url("/img/partner-2.png"); }
     .partners-content .partner-3 {
-      background-image: url("../img/partner-3.png"); }
+      background-image: url("/img/partner-3.png"); }
     .partners-content .partner-4 {
-      background-image: url("../img/partner-4.png"); }
+      background-image: url("/img/partner-4.png"); }
     .partners-content .partner-5 {
-      background-image: url("../img/partner-5.png"); }
+      background-image: url("/img/partner-5.png"); }
 
 @-webkit-keyframes run {
   0% {
@@ -1635,7 +1635,7 @@ form {
     height: 500px;
     width: 500px;
     padding: 0;
-    background-image: url("../img/foradvertisers.jpg");
+    background-image: url("/img/foradvertisers.jpg");
     background-position-x: calc(50% - 120px);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1702,7 +1702,7 @@ form {
       top: 0;
       right: 0;
       bottom: 60px;
-      background-image: url("../img/arrow.png");
+      background-image: url("/img/arrow.png");
       background-position: center bottom;
       background-size: 25px auto;
       background-repeat: no-repeat; }
@@ -1727,20 +1727,20 @@ form {
       text-align: center;
       padding: 15px 7% 0 7%; }
   .keyfeatures .key-1 {
-    background-image: url("../img/key-feature-1.png");
+    background-image: url("/img/key-feature-1.png");
     background-color: #faf9f5; }
   .keyfeatures .key-2 {
-    background-image: url("../img/key-feature-2.png");
+    background-image: url("/img/key-feature-2.png");
     background-color: #f2f0e9; }
   .keyfeatures .key-3 {
-    background-image: url("../img/key-feature-3.png");
+    background-image: url("/img/key-feature-3.png");
     background-color: #3f3f45; }
     .keyfeatures .key-3 .h-key {
       color: white; }
     .keyfeatures .key-3 p {
       color: #f2f0e9; }
   .keyfeatures .key-4 {
-    background-image: url("../img/key-feature-1.png");
+    background-image: url("/img/key-feature-1.png");
     background-color: #2d2c36; }
     .keyfeatures .key-4 .h-key {
       color: white; }
@@ -1749,7 +1749,7 @@ form {
 
 /**********************************************************************************/
 .makefuture .photo {
-  background-image: url("../img/future.jpg");
+  background-image: url("/img/future.jpg");
   height: 700px; }
 
 .makefuture .content {
@@ -1839,7 +1839,7 @@ form {
   .forpublishers .photo-circle {
     margin-left: auto;
     padding: 0;
-    background-image: url("../img/forpublishers.jpg");
+    background-image: url("/img/forpublishers.jpg");
     background-position-x: calc(50% + 110px); }
 
 .forpublishers .content {
@@ -1943,7 +1943,7 @@ form {
 
 .buildsuccess {
   height: 540px !important;
-  background-image: url("../img/buildsuccess.jpg");
+  background-image: url("/img/buildsuccess.jpg");
   background-position-y: 65%; }
   .buildsuccess:before {
     padding: 0;
@@ -2000,7 +2000,7 @@ form {
     vertical-align: top; }
   .buildsuccess {
     height: auto !important;
-    background-image: url("../img/buildsuccess.jpg");
+    background-image: url("/img/buildsuccess.jpg");
     background-position-y: 65%; }
     .buildsuccess .content {
       vertical-align: middle;
@@ -2041,7 +2041,7 @@ form {
       margin: 0; }
   .buildsuccess {
     height: auto !important;
-    background-image: url("../img/buildsuccess.jpg");
+    background-image: url("/img/buildsuccess.jpg");
     background-position-y: 65%; }
     .buildsuccess .content {
       vertical-align: middle;
@@ -2119,11 +2119,11 @@ form {
         overflow: hidden;
         text-align: center; }
       .technology .content-right .row .pic1 {
-        background-image: url("../img/satisfied.png"); }
+        background-image: url("/img/satisfied.png"); }
       .technology .content-right .row .pic2 {
-        background-image: url("../img/valuable.png"); }
+        background-image: url("/img/valuable.png"); }
       .technology .content-right .row .pic3 {
-        background-image: url("../img/finished.png"); }
+        background-image: url("/img/finished.png"); }
   @media (min-width: 767px) and (max-width: 1500px) {
     .technology .col-top {
       vertical-align: middle; }
@@ -2149,7 +2149,7 @@ form {
 
 .ourservices .photo {
   height: 700px;
-  background-image: url("../img/ourservices.jpg"); }
+  background-image: url("/img/ourservices.jpg"); }
 
 .ourservices .content {
   height: 100%;
@@ -2191,13 +2191,13 @@ form {
       overflow: hidden;
       text-align: center; }
     .ourservices .content .card .pic-1 {
-      background-image: url("../img/realtime.png"); }
+      background-image: url("/img/realtime.png"); }
     .ourservices .content .card .pic-2 {
-      background-image: url("../img/vast.png"); }
+      background-image: url("/img/vast.png"); }
     .ourservices .content .card .pic-3 {
-      background-image: url("../img/vpaid.png"); }
+      background-image: url("/img/vpaid.png"); }
     .ourservices .content .card .pic-4 {
-      background-image: url("../img/vmap.png"); }
+      background-image: url("/img/vmap.png"); }
     .ourservices .content .card .text {
       display: inline-block;
       width: 80%; }
@@ -2240,7 +2240,7 @@ form {
       text-align: center; }
   .sendmessage .photo {
     height: 700px;
-    background-image: url("../img/request-2.jpg");
+    background-image: url("/img/request-2.jpg");
     background-position-x: calc(50% - 80px); }
 
 /**********************************************************************************/
@@ -2367,11 +2367,11 @@ form {
       padding: 0 20%;
       margin: 0; }
   .keycontacts .key-1 {
-    background-image: url("../img/con-phone.png"); }
+    background-image: url("/img/con-phone.png"); }
   .keycontacts .key-2 {
-    background-image: url("../img/con-location.png"); }
+    background-image: url("/img/con-location.png"); }
   .keycontacts .key-3 {
-    background-image: url("../img/con-mail.png"); }
+    background-image: url("/img/con-mail.png"); }
 
 .sendmessage {
   padding: 40px 0 60px; }
@@ -2380,7 +2380,7 @@ form {
     text-align: center; }
   .sendmessage .photo {
     height: 700px;
-    background-image: url("../img/request-2.jpg");
+    background-image: url("/img/request-2.jpg");
     background-position-x: calc(50% - 80px); }
 
 /**********************************************************************************/
