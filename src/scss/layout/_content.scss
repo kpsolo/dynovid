@@ -462,8 +462,34 @@ form {
 }
 
 @media(max-width: 767px) {
-    .fp-section,
-    .fp-tableCell {
-        height: auto !important;
+    .fp-section:not(#home) {
+        &, & .fp-tableCell {
+            height: auto !important;
+        }
+    }
+    #home {
+        &, & .fp-tableCell {
+            min-height: 320px;
+        }
+        .container-fluid {
+            height: calc(100% - 80px);
+        }
+        .row-pad, .col-sm-height, .content {
+            height: 100%;
+        }
+        .col-sm-height {
+            display: table-cell;
+        }
+    }
+}
+
+@media(max-height: 479px) {
+    #home {
+        &, & .fp-tableCell {
+           height: auto !important;
+        }
+        .content {
+            min-height: 320px;
+        }
     }
 }
