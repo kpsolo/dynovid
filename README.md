@@ -2,10 +2,14 @@
 
 Install:
 
-1.     npm install
-1.     gulp svg
-1.     gulp build
+1.     `npm install`
+1.     `gulp svg`
+1.     `gulp build` (Alternative for subfolders host: `build__static`)
 
-If need run localhost:
+Build location: _/server/_
+
+Sources: _/src/_
+
+Run on localhost:
 
 *     gulp
